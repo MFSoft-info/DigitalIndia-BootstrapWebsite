@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Dashboard</title>
+
+  <!-- <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="assets/img/fav/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/img/faviconIcon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="assets/img/faviconIcon.png"
+        /> -->
+  <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#fa7070" />
+
+  <meta name="msapplication-TileColor" content="#fa7070" />
+  <meta name="theme-color" content="#fa7070" />
+
+  <!-- Dependency Styles -->
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/css/hexagons.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="assets/css/featured-city.css" />
+</head>
+
+<body id="home-version-1" class="home-color-two" data-style="default">
+  <a href="#main_content" data-type="section-switch" class="return-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
+  <div class="page-loader">
+    <div class="loader">
+      <!-- Loader -->
+      <div class="blobs">
+        <div class="blob-center"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  <!-- /.page-loader -->
+
+  <div id="main_content">
+    <!--=========================-->
+    <!--=        Navbar         =-->
+    <!--=========================-->
+
+    <header class="site-header header-two header_trans-fixed" data-top="992">
+      <div class="container headerr">
+        <div class="header-inner">
+          <div class="site-mobile-logo">
+            <a href="index.html" class="logo">
+              <h4 class="text-white text-nowrap font-weight-bold  mt-2">
+                Digital<span class="font-weight-light ml-2">India</span>
+              </h4>
+            </a>
+          </div>
+          <!-- /.site-mobile-logo -->
+
+          <div class="toggle-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- /.toggle-menu -->
+          <nav class="site-nav nav-two">
+            <div class="close-menu">
+              <span>Close</span>
+              <i class="ei ei-icon_close"></i>
+            </div>
+
+            <div class="site-logo">
+              <a href="index.html" class="logo">
+                <h5 class="text-white text-nowrap font-weight-bold mt-2">
+                  Digital<span class="font-weight-light ml-2">India</span>
+                </h5>
+              </a>
+            </div>
+
+            <!-- <div class="d-flex aligin-items-center justify-content-center"> -->
+            <div class="menu-wrapper" data-top="992">
+              <ul class="site-main-menu align-items-center">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Contact <img src="assets/img/clientsLogo/dropdown.png"
+                      alt="dropdown" width="10px" /> </a>
+                  <ul class="sub-menu">
+                    <li><a href="#"> Mobile Recharge</a></li>
+                    <li><a href="#">TV Recharge</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                  </ul>
+                </li>
+                <li class="py-1">
+                  <a href="login.html" class="login-decoration nav-btn">Login</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" class="mr-4 login-decoration nav-btn">
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.menu-wrapper -->
+          </nav>
+          <!-- /.site-nav -->
+        </div>
+        <!-- /.header-inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.site-header -->
+
+    <!--==========================-->
+    <!--=         Banner         =-->
+    <!--==========================-->
+
+    <section class="banner banner-two banner-two-padding" style="height:250px; padding-bottom: 0px !important;">
+      <div class="container">
+        <div class="banner-content-wrap text-center">
+          <div class="banner-content mt-3">
+            <h1 class="banner-title wow pixFadeUp text-dark font-weight-bold font-50" data-wow-delay="0.3s">
+              <span class="font-48">Dashboard</span>
+            </h1>
+          </div>
+          <hr />
+
+          <!-- /.banner-content-wrap -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!--===========================-->
+    <!--=         Contact         =-->
+    <!--===========================-->
+
+
+
+
+
+    <section class="dashboard">
+      <div class="">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="sidebar">
+              <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+              <li><a href="#"><i class="fa fa-fw fa-wrench"></i> Services</a></li>
+              <li><a href="#"><i class="fa fa-fw fa-user"></i> Clients</a></li>
+              <li><a href="#"><i class="fa fa-fw fa-user"></i> Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-9 ppr-5">
+            <section class="dashboard pt-0">
+              <div class="col-md-12 col-sm-12">
+                <div class="card card-shadow contact-froms p-4">
+                  <form action="php/mailer.php" class="contact-form" data-pixsaas="contact-froms">
+                    <div class="row justify-content-between ml-0 mr-0">
+                      <div class="dd-flex">
+                        <div class="site-logo">
+                          <a href="index.html" class="logo">
+                            <h4 class="text-dark text-nowrap font-weight-bold mt-2">
+                              NET BANKING<i class="font-weight-light">INDIA</i>
+                            </h4>
+                          </a>
+                        </div>
+                        <div class="ml-4">
+                          <h6 class="mb-0">SBI Bank<br>
+                            H/o Delhi</h6>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h6 class="mb-0">Customer Care<br>
+                          123456789</h6>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.contact-froms -->
+              </div>
+              <!-- /.faq-froms -->
+
+              <h1 class="text-center wow pixFadeUp font-weight-bold font-50" data-wow-delay="0.3s">
+                <span class="font-36">Title</span>
+              </h1>
+              <p class="dashboardPara">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Quis purus facilisis tristique pellentesque quam sit
+                eu pharetra, orci. </p>
+              <div class="row my-3 justify-content-center">
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+              </div>
+              <!-- /.row -->
+
+              <h1 class="text-center wow pixFadeUp font-weight-bold font-50" data-wow-delay="0.3s">
+                <span class="font-36">Title 1</span>
+              </h1>
+              <p class="dashboardPara">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Quis purus facilisis tristique pellentesque quam sit
+                eu pharetra, orci. </p>
+              <div class="row my-3 justify-content-center">
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+                <!-- /.faq-froms -->
+
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+
+                <!-- /.faq-froms -->
+
+                <span class="dashboardLink"><a href="" class="text-decoration-underline">Abhyudaya Coop
+                    Bank</a></span>
+
+                <!-- /.faq-froms -->
+                <!-- /.col-md-8 -->
+              </div>
+
+
+              <h1 class="text-center wow pixFadeUp font-weight-bold font-50" data-wow-delay="0.3s">
+                <span class="font-36">Title 2</span>
+              </h1>
+              <p class="dashboardPara">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Quis purus facilisis tristique pellentesque quam sit
+                eu pharetra, orci. </p>
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                  <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.5s">
+                    <div class="saaspik-icon-box-icon">
+                      <img src="media/feature/20.png" alt="" />
+                    </div>
+                    <div class="pixsass-icon-box-content">
+                      <h3 class="pixsass-icon-box-title">
+                        New sharing made for people
+                      </h3>
+                      <p style="font-size: 15px;">
+                        The full monty twit cracking goal Jeffrey lurgy chinwag
+                        bobby vagabond David, I don't want no agro what a load.!
+                      </p>
+
+                      <a href="service-detailes.html#section1" class="more-btn"><i class="ei ei-arrow_right"></i></a>
+
+                    </div>
+                  </div>
+                  <!-- /.pixsass-box style-four -->
+                </div>
+                <!-- /.col-lg-4 col-md-6 -->
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.7s">
+                    <div class="saaspik-icon-box-icon">
+                      <img src="media/feature/19.png" alt="" />
+                    </div>
+                    <div class="pixsass-icon-box-content">
+                      <h3 class="pixsass-icon-box-title">
+                        One integrated solution Manage
+                      </h3>
+
+                      <p style="font-size: 15px;">
+                        The full monty twit cracking goal Jeffrey lurgy chinwag
+                        bobby vagabond David, I don't want no agro what a load.!
+                      </p>
+
+                      <a href="service-detailes.html#section2" class="more-btn"><i class="ei ei-arrow_right"></i></a>
+                    </div>
+
+                  </div>
+                  <!-- /.pixsass-box style-four -->
+                </div>
+                <!-- /.col-lg-4 col-md-6 -->
+
+                <div class="col-lg-4 col-md-6 ">
+                  <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.9s">
+                    <div class="saaspik-icon-box-icon">
+                      <img src="media/feature/18.png" alt="" />
+                    </div>
+                    <div class="pixsass-icon-box-content">
+                      <h3 class="pixsass-icon-box-title">
+                        Thousand of features and Custom option.
+                      </h3>
+                      <p style="font-size: 15px;">
+                        The full monty twit cracking goal Jeffrey lurgy chinwag
+                        bobby vagabond David, I don't want no agro what a load.!
+                      </p>
+
+                      <a href="service-detailes.html#section3" class="more-btn"><i class="ei ei-arrow_right"></i></a>
+                    </div>
+
+                  </div>
+                  <!-- /.pixsass-box style-four -->
+                </div>
+                <!-- /.col-lg-4 col-md-6 -->
+              </div>
+
+
+          </div>
+        </div>
+    </section>
+
+
+    <!--=================================-->
+    <!--=         waves                 =-->
+    <!--=================================-->
+    <div class="seprator-div-light mt-5"></div>
+
+    <section class="footer-bg p-md-0 w-100">
+      <footer id="footer" class="footer-two p-lg-5 p-md-4">
+        <div class="container">
+          <div class="footer-inner wow pixFadeUp">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                  <a href="index.html" class="logo">
+                    <h5 class="text-white text-nowrap font-weight-bold pb-13">
+                      Digital<span class="font-weight-light ml-2">India</span>
+                    </h5>
+                  </a>
+                  <p class="font-16 text-white">
+                    Digital India ePortal - Discover <br> all govenment Services and Bill <br> Payment Services.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-5 pl-md-0 mtt-30">
+                <div class="row">
+                  <div class="col-lg-3 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">USEFUL LINKS</h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">CATEGORY</h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">CONTACT DETAILS</h3>
+
+                      <ul class="footer-menu">
+                        <li>
+                          <div class="d-flex"><img src="assets/img/clientsLogo/loc.png" class="mr-2" alt="location"
+                              style="height: 20px;
+                            margin-top: 10px;" />
+                            <div>Calicut <br> Kerala , INDIA </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/email.png" class="mr-2" alt="email" />
+                            info@digitalindiaeportal.com</span>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/phone.png" class="mr-2" alt="numbr" /> 9188 26 23
+                            75</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.widget footer-widget -->
+              </div>
+              <!-- /.col-lg-3 col-md-6 -->
+
+              <!-- /.col-lg-3 col-md-6 -->
+
+            </div>
+            <!-- /.row -->
+            <hr class="hr-style" />
+            <div class="d-flex justify-content-between pt-3 font-16 footerBottom">
+              <div class="copy-text text-nowrap">©Digital India ePortal - All right reserved</div>
+              <div class="copy-text text-nowrap">Privacy & Cookies Ts&Cs Accessibility</div>
+              <div class="d-flex">
+                <img class="px-2" src="assets/img/clientsLogo/card01.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card02.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card03.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </footer>
+    </section>
+    <div class="seprator-div-dark"></div>
+
+    <!--=========================-->
+    <!--=        Footer         =-->
+    <!--=========================-->
+    <!-- /#footer -->
+  </div>
+  <!-- /#site -->
+
+  <!-- Dependency Scripts -->
+  <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      separateDialCode: true,
+    });
+  </script>
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/swiper/js/swiper.min.js"></script>
+  <script src="dependencies/jquery.appear/jquery.appear.js"></script>
+  <script src="dependencies/wow/js/wow.min.js"></script>
+  <script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+  <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6">
+    </script>
+
+  <!-- Site Scripts -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/app.js"></script>
+
+
+  <script>
+    $(document).on("change", "input[type='checkbox']", function () {
+      $(this).parent().parent().parent()[this.checked ? "addClass" : "removeClass"]("checked");
+    });
+  </script>
+</body>
+
+</html>
