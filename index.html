@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Meta Data -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <title>Home</title>
-
-  <!-- <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/fav/apple-touch-icon.png"
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
+    <title>Home</title>
+
+    <!-- 
     <link
       rel="icon"
       type="image/png"
@@ -25,883 +23,1195 @@
       sizes="16x16"
       href="assets/img/faviconIcon.png"
     /> -->
-  <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#fa7070" />
+    <link
+      rel="mask-icon"
+      href="assets/img/fav/safari-pinned-tab.svg"
+      color="#fa7070"
+    />
 
-  <meta name="msapplication-TileColor" content="#fa7070" />
-  <meta name="theme-color" content="#fa7070" />
+    <meta name="msapplication-TileColor" content="#fa7070" />
+    <meta name="theme-color" content="#fa7070" />
 
-  <!-- Dependency Styles -->
-  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
-  <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
-  <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css" />
-  <!-- <link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css" />
-  <link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css" />
-  <link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <!-- Dependency Styles -->
+    <link
+      rel="stylesheet"
+      href="dependencies/bootstrap/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/fontawesome/css/all.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/swiper/css/swiper.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/wow/css/animate.css"
+      type="text/css"
+    />
 
-  <!-- Site Stylesheet -->
-  <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
-  <link rel="stylesheet" href="assets/css/particles.css" type="text/css" />
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/particles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-  <!-- Google Web Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css" />
-</head>
+  <body id="home-version-1" class="home-color-two" data-style="default">
+    <a href="#main_content" data-type="section-switch" class="return-to-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
 
-<body id="home-version-1" class="home-color-two" data-style="default">
-  <a href="#main_content" data-type="section-switch" class="return-to-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
-
-  <!-- Loader -->
-  <div class="page-loader">
-    <div class="loader">
-      <div class="blobs">
-        <div class="blob-center"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
+    <!-- Loader -->
+    <div class="page-loader">
+      <div class="loader">
+        <div class="blobs">
+          <div class="blob-center"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
-      </svg>
     </div>
-  </div>
-  <!-- /.page-loader -->
+    <!-- /.page-loader -->
 
-  <div id="main_content">
-    <!--=========================-->
-    <!--=        Navbar         =-->
-    <!--=========================-->
+    <div id="main_content">
+      <!--=========================-->
+      <!--=        Navbar         =-->
+      <!--=========================-->
 
-    <header class="site-header header-two header_trans-fixed" data-top="992">
-      <div class="container headerr">
-        <div class="header-inner">
-          <div class="site-mobile-logo">
-            <a href="index.html" class="logo">
-              <h4 class="text-white text-nowrap font-weight-bold  mt-2">
-                Digital<span class="font-weight-light ml-2">India</span>
-              </h4>
-            </a>
-          </div>
-          <!-- /.site-mobile-logo -->
-
-          <div class="toggle-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <!-- /.toggle-menu -->
-          <nav class="site-nav nav-two">
-            <div class="close-menu">
-              <span>Close</span>
-              <i class="ei ei-icon_close"></i>
-            </div>
-
-            <div class="site-logo">
+      <header class="site-header header-two header_trans-fixed" data-top="992">
+        <div class="container headerr">
+          <div class="header-inner">
+            <div class="site-mobile-logo">
               <a href="index.html" class="logo">
-                <h5 class="text-white text-nowrap font-weight-bold mt-2">
+                <h4 class="text-white text-nowrap font-weight-bold mt-2">
                   Digital<span class="font-weight-light ml-2">India</span>
-                </h5>
+                </h4>
               </a>
             </div>
+            <!-- /.site-mobile-logo -->
 
-            <!-- <div class="d-flex aligin-items-center justify-content-center"> -->
-            <div class="menu-wrapper" data-top="992">
-              <ul class="site-main-menu align-items-center">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Contact <img src="assets/img/clientsLogo/dropdown.png"
-                      alt="dropdown" width="10px" /> </a>
-                  <ul class="sub-menu">
-                    <li><a href="#"> Mobile Recharge</a></li>
-                    <li><a href="#">TV Recharge</a></li>
-                    <li><a href="#">Bill Payment</a></li>
-                  </ul>
-                </li>
-                <li class="py-1">
-                  <a href="login.html" class="login-decoration nav-btn">Login</a>
-                </li>
-                <li class="py-1">
-                  <a href="#" class="mr-4 login-decoration nav-btn">
-                    Register
-                  </a>
-                </li>
-              </ul>
+            <div class="toggle-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
-            <!-- /.menu-wrapper -->
-          </nav>
-          <!-- /.site-nav -->
-        </div>
-        <!-- /.header-inner -->
-      </div>
-      <!-- /.container -->
-    </header>
-    <!-- /.site-header -->
-
-    <!--==========================-->
-    <!--=         Banner         =-->
-    <!--==========================-->
-    <div id="particles-js"></div>
-    <section class="banner banner-two">
-      <div class="container">
-        <div class="banner-content-wrap">
-          <div class="row mt-5">
-            <div class="col-lg-12 text-center">
-              <div class="banner-content mt-3">
-                <h2 class="banner-title wow pixFadeUp" data-wow-delay="0.3s">
-                  Digital India </h2>
-                <h3 class="wow pixFadeUp text-dark" data-wow-delay="0.3s" style="font-size: 34px">EPORTAL</h3>
-                <p class="description wow pixFadeUp" data-wow-delay="0.5s">
-                  Lorem Ipsum is simply dummy text of the printing and<br> typesetting industry. Lorem Ipsum has been
-                  the industry's<br> standard dummy text ever since the 1500s, when an unknown<br> printer took a galley
-                  of type and scrambled it to make a type<br> specimen book.
-                </p>
-                <a href="#" class="btn btn-header ma-0" data-wow-delay="0.6s">VIEW MORE</a>
+            <!-- /.toggle-menu -->
+            <nav class="site-nav nav-two">
+              <div class="close-menu">
+                <span>Close</span>
+                <i class="ei ei-icon_close"></i>
               </div>
-              <!-- /.banner-content -->
-            </div>
-            <!-- /.row -->
+
+              <div class="site-logo">
+                <a href="index.html" class="logo">
+                  <h5 class="text-white text-nowrap font-weight-bold mt-2">
+                    Digital<span class="font-weight-light ml-2">India</span>
+                  </h5>
+                </a>
+              </div>
+
+              <!-- <div class="d-flex aligin-items-center justify-content-center"> -->
+              <div class="menu-wrapper" data-top="992">
+                <ul class="site-main-menu align-items-center">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#"
+                      >Contact
+                      <img
+                        src="assets/img/clientsLogo/dropdown.png"
+                        alt="dropdown"
+                        width="10px"
+                      />
+                    </a>
+                    <ul class="sub-menu">
+                      <li><a href="#"> Mobile Recharge</a></li>
+                      <li><a href="#">TV Recharge</a></li>
+                      <li><a href="#">Bill Payment</a></li>
+                    </ul>
+                  </li>
+                  <li class="py-1">
+                    <a href="login.html" class="login-decoration nav-btn"
+                      >Login</a
+                    >
+                  </li>
+                  <li class="py-1">
+                    <a href="#" class="mr-4 login-decoration nav-btn">
+                      Register
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.menu-wrapper -->
+            </nav>
+            <!-- /.site-nav -->
           </div>
-          <!-- /.banner-content-wrap -->
+          <!-- /.header-inner -->
         </div>
-      </div>
-      <!-- /.container -->
+        <!-- /.container -->
+      </header>
+      <!-- /.site-header -->
 
-    </section>
-
-    <!--===============================-->
-    <!--=         Testimonial         =-->
-    <!--===============================-->
-    <section class="testimonials-two zindex-negative browseBusiness mt-230">
-      <div class="container pt-bussiness">
-        <div class="section-title color-two text-center">
-          <h2 class="wow pixFadeUp fontW-400 text-dark" data-wow-delay="0.3s">
-            Browse Businesses by Category
-          </h2>
-        </div>
-        <!-- /.section-title -->
-
-        <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
-          <div class="swiper-container" id="testimonial-two" data-speed="700" data-autoplay="5000" data-perpage="5"
-            data-space="40"
-            data-breakpoints='{"991": {"slidesPerView": 3},"768": {"slidesPerView": 3},"420": {"slidesPerView": 2}}'>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner d-flex flex-column align-items-center">
-                    <div class="testimonial-bio testimonial-circle" style="background-color: #FF6969;">
-                      <img src="assets/img/body/aadhar.png" class="avatar" />
-                      <p class="bio-info">Aadhaar</p>
-                      <!-- /.avatar -->
-                    </div>
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner d-flex flex-column align-items-center">
-                    <div class="testimonial-bio testimonial-circle" style="background-color: #69B7FF;
-                    ;">
-                      <img src="assets/img/body/aadhar.png" class="avatar" />
-                      <p class="bio-info">Pan Card</p>
-                      <!-- /.avatar -->
-                    </div>
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner d-flex flex-column align-items-center">
-                    <div class="testimonial-bio testimonial-circle" style="background-color: #914EFF;">
-                      <img src="assets/img/body/aadhar.png" class="avatar" />
-                      <p class="bio-info">Voter Card</p>
-                      <!-- /.avatar -->
-                    </div>
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner d-flex flex-column align-items-center">
-                    <div class="testimonial-bio testimonial-circle" style="background-color: #FC66FF;">
-                      <img src="assets/img/body/aadhar.png" class="avatar" />
-                      <p class="bio-info">Ration Cardar</p>
-                      <!-- /.avatar -->
-                    </div>
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner d-flex flex-column align-items-center">
-                    <div class="testimonial-bio testimonial-circle" style="background-color: #FFCD1D;">
-                      <img src="assets/img/body/aadhar.png" class="avatar" />
-                      <p class="bio-info">Driving <br>Licence</p>
-                      <!-- /.avatar -->
-                    </div>
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner d-flex flex-column align-items-center">
-                    <div class="testimonial-bio testimonial-circle" style="background-color: #FF6969;">
-                      <img src="assets/img/body/aadhar.png" class="avatar" />
-                      <p class="bio-info">Aadhaar</p>
-                      <!-- /.avatar -->
-                    </div>
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-            </div>
-            <!-- /.swiper-wrapper -->
-          </div>
-          <!-- /.swiper-container -->
-          <div class="swiper-pagination mt-4"></div>
-        </div>
-        <!-- /#testimonial-wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.testimonial -->
-
-    <!--===============================-->
-    <!--=         Testimonial         =-->
-    <!--===============================-->
-
-    <section class="testimonials-two servicePadding">
-      <div class="testimonials-two-back" style="top: -84px"></div>
-      <div class="container">
-        <div class="section-title color-two text-center">
-          <h2 class="wow pixFadeUp fontW-400" data-wow-delay="0.3s" style="animation-fill-mode: both">
-            Service category
-          </h2>
-        </div>
-        <!-- /.section-title -->
-
-        <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
-          <div class="swiper-container" id="testimonial-two" data-speed="700" data-autoplay="5000" data-perpage="4"
-            data-space="25" data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2 bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-1.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2 bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-2.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2 bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-3.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2 bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-            </div>
-            <!-- /.swiper-wrapper -->
-          </div>
-          <!-- /.swiper-container -->
-          <div class="swiper-pagination category-pagination mt-5"></div>
-        </div>
-        <!-- /#testimonial-wrapper -->
-      </div>
-
-      <!-- /.container -->
-    </section>
-    <!-- /.testimonial -->
-
-    <!--===============================-->
-    <!--=         Featured service         =-->
-    <!--===============================-->
-    <section class="testimonials-two">
-      <div class="container">
-        <div class="section-title color-two text-center">
-          <h2 class="wow pixFadeUp text-dark fontW-500" data-wow-delay="0.3s" style="animation-fill-mode: both">
-            Featured service
-          </h2>
-        </div>
-        <!-- /.section-title -->
-
-        <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
-          <div class="swiper-container pb-4" id="testimonial-two" data-speed="700" data-autoplay="5000" data-perpage="4"
-            data-space="25" data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2 bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2  bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2 bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-card-2 bRadius-32">
-                    <div class="testimonial-bio">
-                      <img class="w-100 h-190" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industr.
-                      </p>
-                      <button class="btn btn-category">Pricing</button>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-            </div>
-            <!-- /.swiper-wrapper -->
-          </div>
-          <!-- /.swiper-container -->
-        </div>
-        <!-- /#testimonial-wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.Featured service -->
-
-    <!--===============================-->
-    <!--=         Our Blog          =-->
-    <!--===============================-->
-    <section class="testimonials-two ourBlog">
-      <div class="container">
-        <div class="section-title color-two text-center">
-          <h2 class="wow pixFadeUp text-dark fontW-500" data-wow-delay="0.3s" style="animation-fill-mode: both">
-            Our blog
-          </h2>
-        </div>
-        <!-- /.section-title -->
-
-        <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
-          <div class="swiper-container pb-4" id="testimonial-two" data-speed="700" data-autoplay="5000" data-perpage="3"
-            data-space="50" data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-white">
-                    <div class="testimonial-bio">
-                      <img class="w-358 h-298 bRadius-18" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-2 pr-2 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2 blog">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                      </p>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-white">
-                    <div class="testimonial-bio">
-                      <img class="w-358 h-298 bRadius-18" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-2 pr-2 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2 blog">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                      </p>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-two">
-                  <div class="testi-content-inner bg-white">
-                    <div class="testimonial-bio">
-                      <img class="w-358 h-298 bRadius-18" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
-                    </div>
-                    <!-- /.testimonial -->
-
-                    <div class="testimonial-content text-center pt-4 pl-2 pr-2 pb-4">
-                      <h4 class="text-center text-dark">header text</h4>
-                      <p class="text-center text-dark opacity-7 pb-2 blog">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                      </p>
-                    </div>
-                    <!-- /.testimonial-content -->
-                  </div>
-                  <!-- /.testi-content-inner -->
-                </div>
-                <!-- /.testimonial-two -->
-              </div>
-            </div>
-            <!-- /.swiper-wrapper -->
-            <button class="btn btn-blog d-flex ma-0">View more</button>
-          </div>
-          <!-- /.swiper-container -->
-        </div>
-        <!-- /#testimonial-wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.Our Blog -->
-
-    <!--===============================-->
-    <!--=         Testimonial         =-->
-    <!--===============================-->
-    <section class="testimonials-two testimonial-Bg">
-      <div class="container ">
-        <div class="section-title color-two text-center">
-          <h2 class="title wow pixFadeUp font-48" data-wow-delay="0.3s">
-            Testimonials
-          </h2>
-          <img src="assets/img/body/testimonial_icon.png" class="mt-4" alt="icon" />
-        </div>
-        <!-- /.section-title -->
-
-        <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
-          <div class="swiper-container" id="testimonial-two" data-speed="700" data-autoplay="5000" data-perpage="1"
-            data-space="50" data-breakpoints='{"991": {"slidesPerView": 1}, "768": {"slidesPerView": 1}}'>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.5s">
-                  <div class="pixsass-icon-box-content">
-                    <div class="line-initial text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies
-                      viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac
-                      nisl tempor commodo.
-                    </div>
-                  </div>
-                  <div class="saaspik-icon-box-icon mt-4 mb-3 text-center">
-                    <img src="assets/img/body/testimonialImgIcon.png" class="mb-3 pt-1" alt="testimonialImgIcon" />
-                    <h6>Peter parker</h6>
-                    <span>Web Designer</span>
-                  </div>
-                </div>
-                <!-- /.pixsass-box style-three wow pixFadeUp -->
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.5s">
-                  <div class="pixsass-icon-box-content">
-                    <div class="line-initial text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies
-                      viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac
-                      nisl tempor commodo.
-                    </div>
-                  </div>
-                  <div class="saaspik-icon-box-icon mt-4 mb-5 text-center">
-                    <img src="assets/img/body/testimonialImgIcon.png" class="mb-3 pt-1" alt="testimonialImgIcon" />
-                    <h6>Peter parker</h6>
-                    <span>Web Designer</span>
-                  </div>
-                </div>
-                <!-- /.pixsass-box style-three wow pixFadeUp -->
-                <!-- /.testimonial-two -->
-              </div>
-
-              <div class="swiper-slide">
-                <div class="saaspik-icon-box-wrapper style-three wow pixFadeUp" data-wow-delay="0.5s">
-                  <div class="pixsass-icon-box-content">
-                    <div class="line-initial text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies
-                      viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac
-                      nisl tempor commodo.
-                    </div>
-                  </div>
-                  <div class="saaspik-icon-box-icon mt-4 mb-5 text-center">
-                    <img src="assets/img/body/testimonialImgIcon.png" class="mb-3 pt-1" alt="testimonialImgIcon" />
-                    <h6>Peter parker</h6>
-                    <span>Web Designer</span>
-                  </div>
-                </div>
-                <!-- /.pixsass-box style-three wow pixFadeUp -->
-                <!-- /.testimonial-two -->
-              </div>
-            </div>
-            <!-- /.swiper-wrapper -->
-          </div>
-          <!-- /.swiper-container -->
-          <div class="swiper-pagination mt-0"></div>
-        </div>
-        <!-- /#testimonial-wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.testimonial -->
-
-
-    <!--=================================-->
-    <!--=         Logo Carousel         =-->
-    <!--=================================-->
-    <section class="brand-logo-ab">
-      <div class="section-small text-center">
-        <h2 class="title wow pixFadeUp text-dark font-48">Our Clients</h2>
-      </div>
-      <div class="container">
-        <div class="swiper-container logo-carousel wow pixFadeUp" id="logo-carousel" data-perpage="6"
-          data-breakpoints='{"1024": {"slidesPerView": 4}, "768": {"slidesPerView": 4}, "620": {"slidesPerView": 3}}'>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="brand-logo"><img src="assets/img/clientsLogo/client_1.png" alt="brand"></div>
-            </div>
-            <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="brand-logo"><img src="assets/img/clientsLogo/client_2.png" alt="brand"></div>
-            </div>
-            <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="brand-logo"><img src="assets/img/clientsLogo/client_3.png" alt="brand"></div>
-            </div>
-            <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="brand-logo"><img src="assets/img/clientsLogo/client_4.png" alt="brand"></div>
-            </div>
-            <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="brand-logo"><img src="assets/img/clientsLogo/client_5.png" alt="brand"></div>
-            </div>
-            <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="brand-logo"><img src="assets/img/clientsLogo/client_6.png" alt="brand"></div>
-            </div>
-            <!-- /.swiper-slide -->
-
-            <div class="swiper-slide">
-              <div class="brand-logo"><img src="assets/img/clientsLogo/client_2.png" alt="brand"></div>
-            </div>
-            <!-- /.swiper-slide -->
-          </div>
-          <!-- /.swiper-wrapper -->
-        </div>
-        <!-- /#logo-carousel.swiper-container logo-carousel -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.brand-logo -->
-
-    <div class="seprator-div-light mt-divider"></div>
-
-    <section class="footer-bg p-md-0 w-100">
-      <footer id="footer" class="footer-two p-lg-5 p-md-4">
+      <!--==========================-->
+      <!--=         Banner         =-->
+      <!--==========================-->
+      <div id="particles-js"></div>
+      <section class="banner banner-two">
         <div class="container">
-          <div class="footer-inner wow pixFadeUp">
-            <div class="row">
-              <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="footer-widget">
-                  <a href="index.html" class="logo">
-                    <h5 class="text-white text-nowrap font-weight-bold pb-13">
-                      Digital<span class="font-weight-light ml-2">India</span>
-                    </h5>
-                  </a>
-                  <p class="font-16 text-white">
-                    Digital India ePortal - Discover <br> all govenment Services and Bill <br> Payment Services.
+          <div class="banner-content-wrap">
+            <div class="row mt-5">
+              <div class="col-lg-12 text-center">
+                <div class="banner-content mt-3">
+                  <h2 class="banner-title wow pixFadeUp" data-wow-delay="0.3s">
+                    Digital India
+                  </h2>
+                  <h3
+                    class="wow pixFadeUp text-dark"
+                    data-wow-delay="0.3s"
+                    style="font-size: 34px"
+                  >
+                    EPORTAL
+                  </h3>
+                  <p class="description wow pixFadeUp" data-wow-delay="0.5s">
+                    Lorem Ipsum is simply dummy text of the printing and<br />
+                    typesetting industry. Lorem Ipsum has been the industry's<br />
+                    standard dummy text ever since the 1500s, when an unknown<br />
+                    printer took a galley of type and scrambled it to make a
+                    type<br />
+                    specimen book.
                   </p>
+                  <a href="#" class="btn btn-header ma-0" data-wow-delay="0.6s"
+                    >VIEW MORE</a
+                  >
                 </div>
+                <!-- /.banner-content -->
               </div>
-
-              <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-5 pl-md-0 mtt-30">
-                <div class="row">
-                  <div class="col-lg-3 col-md-12">
-                    <div class="widget footer-widget">
-                      <h3 class="widget-title mb-2 text-white">USEFUL LINKS</h3>
-                      <ul class="footer-menu">
-                        <li>
-                          <a href="#" class="footer-font-size">Home </a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">About Us</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Services</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Contact</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Services</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                    <div class="widget footer-widget">
-                      <h3 class="widget-title mb-2 text-white">CATEGORY</h3>
-                      <ul class="footer-menu">
-                        <li>
-                          <a href="#" class="footer-font-size">Home </a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">About Us</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Services</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Contact</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Services</a>
-                        </li>
-                        <li>
-                          <a href="#" class="footer-font-size">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 col-md-12">
-                    <div class="widget footer-widget">
-                      <h3 class="widget-title mb-2 text-white">CONTACT DETAILS</h3>
-
-                      <ul class="footer-menu">
-                        <li>
-                          <div class="d-flex"><img src="assets/img/clientsLogo/loc.png" class="mr-2" alt="location"
-                              style="height: 20px;
-                            margin-top: 10px;" />
-                            <div>Calicut <br> Kerala , INDIA </div>
-                          </div>
-                        </li>
-                        <li>
-                          <span><img src="assets/img/clientsLogo/email.png" class="mr-2" alt="email" />
-                            info@digitalindiaeportal.com</span>
-                        </li>
-                        <li>
-                          <span><img src="assets/img/clientsLogo/phone.png" class="mr-2" alt="numbr" /> 9188 26 23
-                            75</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- /.widget footer-widget -->
-              </div>
-              <!-- /.col-lg-3 col-md-6 -->
-
-              <!-- /.col-lg-3 col-md-6 -->
-
+              <!-- /.row -->
             </div>
-            <!-- /.row -->
-            <hr class="hr-style" />
-            <div class="d-flex justify-content-between pt-3 font-16 footerBottom">
-              <div class="copy-text text-nowrap">©Digital India ePortal - All right reserved</div>
-              <div class="copy-text text-nowrap">Privacy & Cookies Ts&Cs Accessibility</div>
-              <div class="d-flex">
-                <img class="px-2" src="assets/img/clientsLogo/card01.png" alt="" />
-                <img class="px-2" src="assets/img/clientsLogo/card02.png" alt="" />
-                <img class="px-2" src="assets/img/clientsLogo/card03.png" alt="" />
-                <img class="px-2" src="assets/img/clientsLogo/card4.png" alt="" />
-              </div>
-            </div>
+            <!-- /.banner-content-wrap -->
           </div>
         </div>
         <!-- /.container -->
-      </footer>
-    </section>
-    <div class="seprator-div-dark"></div>
+      </section>
 
-    <!--=========================-->
-    <!--=        Footer         =-->
-    <!--=========================-->
-    <!-- /#footer -->
-  </div>
-  <!-- /#site -->
+      <!--===============================-->
+      <!--=         Testimonial         =-->
+      <!--===============================-->
+      <section class="testimonials-two zindex-negative browseBusiness mt-230">
+        <div class="container pt-bussiness">
+          <div class="section-title color-two text-center">
+            <h2 class="wow pixFadeUp fontW-400 text-dark" data-wow-delay="0.3s">
+              Browse Businesses by Category
+            </h2>
+          </div>
+          <!-- /.section-title -->
 
-  <!-- Dependency Scripts -->
-  <script src="dependencies/jquery/jquery.min.js"></script>
-  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-  <script src="dependencies/swiper/js/swiper.min.js"></script>
-  <script src="dependencies/wow/js/wow.min.js"></script>
+          <div
+            id="testimonial-wrapper"
+            class="wow pixFadeUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="swiper-container"
+              id="testimonial-two"
+              data-speed="700"
+              data-autoplay="5000"
+              data-perpage="5"
+              data-space="40"
+              data-breakpoints='{"991": {"slidesPerView": 3},"768": {"slidesPerView": 3},"420": {"slidesPerView": 2}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div
+                      class="testi-content-inner d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="testimonial-bio testimonial-circle"
+                        style="background-color: #ff6969"
+                      >
+                        <img src="assets/img/body/aadhar.png" class="avatar" />
+                        <p class="bio-info">Aadhaar</p>
+                        <!-- /.avatar -->
+                      </div>
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
 
- 
-  <!-- Site Scripts -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-  <script src="assets/js/header.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/lib/stats.js"></script>
-</body>
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div
+                      class="testi-content-inner d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="testimonial-bio testimonial-circle"
+                        style="background-color: #69b7ff ;"
+                      >
+                        <img src="assets/img/body/aadhar.png" class="avatar" />
+                        <p class="bio-info">Pan Card</p>
+                        <!-- /.avatar -->
+                      </div>
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
 
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div
+                      class="testi-content-inner d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="testimonial-bio testimonial-circle"
+                        style="background-color: #914eff"
+                      >
+                        <img src="assets/img/body/aadhar.png" class="avatar" />
+                        <p class="bio-info">Voter Card</p>
+                        <!-- /.avatar -->
+                      </div>
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div
+                      class="testi-content-inner d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="testimonial-bio testimonial-circle"
+                        style="background-color: #fc66ff"
+                      >
+                        <img src="assets/img/body/aadhar.png" class="avatar" />
+                        <p class="bio-info">Ration Cardar</p>
+                        <!-- /.avatar -->
+                      </div>
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div
+                      class="testi-content-inner d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="testimonial-bio testimonial-circle"
+                        style="background-color: #ffcd1d"
+                      >
+                        <img src="assets/img/body/aadhar.png" class="avatar" />
+                        <p class="bio-info">Driving <br />Licence</p>
+                        <!-- /.avatar -->
+                      </div>
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div
+                      class="testi-content-inner d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="testimonial-bio testimonial-circle"
+                        style="background-color: #ff6969"
+                      >
+                        <img src="assets/img/body/aadhar.png" class="avatar" />
+                        <p class="bio-info">Aadhaar</p>
+                        <!-- /.avatar -->
+                      </div>
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+              </div>
+              <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /.swiper-container -->
+            <div class="swiper-pagination mt-4"></div>
+          </div>
+          <!-- /#testimonial-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.testimonial -->
+
+      <!--===============================-->
+      <!--=         Testimonial         =-->
+      <!--===============================-->
+
+      <section class="testimonials-two servicePadding">
+        <div class="testimonials-two-back" style="top: -84px"></div>
+        <div class="container">
+          <div class="section-title color-two text-center">
+            <h2
+              class="wow pixFadeUp fontW-400"
+              data-wow-delay="0.3s"
+              style="animation-fill-mode: both"
+            >
+              Service category
+            </h2>
+          </div>
+          <!-- /.section-title -->
+
+          <div
+            id="testimonial-wrapper"
+            class="wow pixFadeUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="swiper-container"
+              id="testimonial-two"
+              data-speed="700"
+              data-autoplay="5000"
+              data-perpage="4"
+              data-space="25"
+              data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-1.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-2.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-3.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+              </div>
+              <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /.swiper-container -->
+            <div class="swiper-pagination category-pagination mt-5"></div>
+          </div>
+          <!-- /#testimonial-wrapper -->
+        </div>
+
+        <!-- /.container -->
+      </section>
+      <!-- /.testimonial -->
+
+      <!--===============================-->
+      <!--=         Featured service         =-->
+      <!--===============================-->
+      <section class="testimonials-two">
+        <div class="container">
+          <div class="section-title color-two text-center">
+            <h2
+              class="wow pixFadeUp text-dark fontW-500"
+              data-wow-delay="0.3s"
+              style="animation-fill-mode: both"
+            >
+              Featured service
+            </h2>
+          </div>
+          <!-- /.section-title -->
+
+          <div
+            id="testimonial-wrapper"
+            class="wow pixFadeUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="swiper-container pb-4"
+              id="testimonial-two"
+              data-speed="700"
+              data-autoplay="5000"
+              data-perpage="4"
+              data-space="25"
+              data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-card-2 bRadius-32">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-100 h-190"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-4 pr-4 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industr.
+                        </p>
+                        <button class="btn btn-category">Pricing</button>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+              </div>
+              <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /#testimonial-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.Featured service -->
+
+      <!--===============================-->
+      <!--=         Our Blog          =-->
+      <!--===============================-->
+      <section class="testimonials-two ourBlog">
+        <div class="container">
+          <div class="section-title color-two text-center">
+            <h2
+              class="wow pixFadeUp text-dark fontW-500"
+              data-wow-delay="0.3s"
+              style="animation-fill-mode: both"
+            >
+              Our blog
+            </h2>
+          </div>
+          <!-- /.section-title -->
+
+          <div
+            id="testimonial-wrapper"
+            class="wow pixFadeUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="swiper-container pb-4"
+              id="testimonial-two"
+              data-speed="700"
+              data-autoplay="5000"
+              data-perpage="3"
+              data-space="50"
+              data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-white">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-358 h-298 bRadius-18"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-2 pr-2 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2 blog">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-white">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-358 h-298 bRadius-18"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-2 pr-2 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2 blog">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-two">
+                    <div class="testi-content-inner bg-white">
+                      <div class="testimonial-bio">
+                        <img
+                          class="w-358 h-298 bRadius-18"
+                          src="assets/img/body/Rectangle-4.png"
+                          alt="testimonial"
+                        />
+                      </div>
+                      <!-- /.testimonial -->
+
+                      <div
+                        class="testimonial-content text-center pt-4 pl-2 pr-2 pb-4"
+                      >
+                        <h4 class="text-center text-dark">header text</h4>
+                        <p class="text-center text-dark opacity-7 pb-2 blog">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting
+                        </p>
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testi-content-inner -->
+                  </div>
+                  <!-- /.testimonial-two -->
+                </div>
+              </div>
+              <!-- /.swiper-wrapper -->
+              <button class="btn btn-blog d-flex ma-0">View more</button>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /#testimonial-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.Our Blog -->
+
+      <!--===============================-->
+      <!--=         Testimonial         =-->
+      <!--===============================-->
+      <section class="testimonials-two testimonial-Bg">
+        <div class="container">
+          <div class="section-title color-two text-center">
+            <h2
+              class="title wow pixFadeUp font-48 text-white"
+              data-wow-delay="0.3s"
+            >
+              Testimonials
+            </h2>
+            <img
+              src="assets/img/body/testimonial_icon.png"
+              class="mt-4"
+              alt="icon"
+            />
+          </div>
+          <!-- /.section-title -->
+
+          <div
+            id="testimonial-wrapper"
+            class="wow pixFadeUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="swiper-container"
+              id="testimonial-two"
+              data-speed="700"
+              data-autoplay="5000"
+              data-perpage="1"
+              data-space="50"
+              data-breakpoints='{"991": {"slidesPerView": 1}, "768": {"slidesPerView": 1}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="saaspik-icon-box-wrapper style-three wow pixFadeUp"
+                    data-wow-delay="0.5s"
+                  >
+                    <div class="pixsass-icon-box-content">
+                      <div class="line-initial text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam enim diam, tempus vel ultricies viverra, luctus
+                        in elit. Aliquam tempus blandit velit, in pharetra ex
+                        volutpat a. Cras eu augue ac nisl tempor commodo.
+                      </div>
+                    </div>
+                    <div class="saaspik-icon-box-icon mt-4 mb-3 text-center">
+                      <img
+                        src="assets/img/body/testimonialImgIcon.png"
+                        class="mb-3 pt-1"
+                        alt="testimonialImgIcon"
+                      />
+                      <h6>Peter parker</h6>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                  <!-- /.pixsass-box style-three wow pixFadeUp -->
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="saaspik-icon-box-wrapper style-three wow pixFadeUp"
+                    data-wow-delay="0.5s"
+                  >
+                    <div class="pixsass-icon-box-content">
+                      <div class="line-initial text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam enim diam, tempus vel ultricies viverra, luctus
+                        in elit. Aliquam tempus blandit velit, in pharetra ex
+                        volutpat a. Cras eu augue ac nisl tempor commodo.
+                      </div>
+                    </div>
+                    <div class="saaspik-icon-box-icon mt-4 mb-5 text-center">
+                      <img
+                        src="assets/img/body/testimonialImgIcon.png"
+                        class="mb-3 pt-1"
+                        alt="testimonialImgIcon"
+                      />
+                      <h6>Peter parker</h6>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                  <!-- /.pixsass-box style-three wow pixFadeUp -->
+                  <!-- /.testimonial-two -->
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="saaspik-icon-box-wrapper style-three wow pixFadeUp"
+                    data-wow-delay="0.5s"
+                  >
+                    <div class="pixsass-icon-box-content">
+                      <div class="line-initial text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam enim diam, tempus vel ultricies viverra, luctus
+                        in elit. Aliquam tempus blandit velit, in pharetra ex
+                        volutpat a. Cras eu augue ac nisl tempor commodo.
+                      </div>
+                    </div>
+                    <div class="saaspik-icon-box-icon mt-4 mb-5 text-center">
+                      <img
+                        src="assets/img/body/testimonialImgIcon.png"
+                        class="mb-3 pt-1"
+                        alt="testimonialImgIcon"
+                      />
+                      <h6>Peter parker</h6>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                  <!-- /.pixsass-box style-three wow pixFadeUp -->
+                  <!-- /.testimonial-two -->
+                </div>
+              </div>
+              <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /.swiper-container -->
+            <div class="swiper-pagination mt-0"></div>
+          </div>
+          <!-- /#testimonial-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.testimonial -->
+
+      <!--=================================-->
+      <!--=         Logo Carousel         =-->
+      <!--=================================-->
+      <section class="brand-logo-ab">
+        <div class="section-small text-center">
+          <h2 class="title wow pixFadeUp text-dark font-48">Our Clients</h2>
+        </div>
+        <div class="container">
+          <div
+            class="swiper-container logo-carousel wow pixFadeUp"
+            id="logo-carousel"
+            data-perpage="6"
+            data-breakpoints='{"1024": {"slidesPerView": 4}, "768": {"slidesPerView": 4}, "620": {"slidesPerView": 3}}'
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="brand-logo">
+                  <img src="assets/img/clientsLogo/client_1.png" alt="brand" />
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="brand-logo">
+                  <img src="assets/img/clientsLogo/client_2.png" alt="brand" />
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="brand-logo">
+                  <img src="assets/img/clientsLogo/client_3.png" alt="brand" />
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="brand-logo">
+                  <img src="assets/img/clientsLogo/client_4.png" alt="brand" />
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="brand-logo">
+                  <img src="assets/img/clientsLogo/client_5.png" alt="brand" />
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="brand-logo">
+                  <img src="assets/img/clientsLogo/client_6.png" alt="brand" />
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="brand-logo">
+                  <img src="assets/img/clientsLogo/client_2.png" alt="brand" />
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /#logo-carousel.swiper-container logo-carousel -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.brand-logo -->
+
+      <div class="seprator-div-light mt-divider"></div>
+
+      <section class="footer-bg p-md-0 w-100">
+        <footer id="footer" class="footer-two p-lg-5 p-md-4">
+          <div class="container">
+            <div class="footer-inner wow pixFadeUp">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="footer-widget">
+                    <a href="index.html" class="logo">
+                      <h5 class="text-white text-nowrap font-weight-bold pb-13">
+                        Digital<span class="font-weight-light ml-2">India</span>
+                      </h5>
+                    </a>
+                    <p class="font-16 text-white">
+                      Digital India ePortal - Discover <br />
+                      all govenment Services and Bill <br />
+                      Payment Services.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-8 col-md-12 col-sm-12 pl-lg-5 pl-md-0 mtt-30"
+                >
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                      <div class="widget footer-widget">
+                        <h3 class="widget-title mb-2 text-white">
+                          USEFUL LINKS
+                        </h3>
+                        <ul class="footer-menu">
+                          <li>
+                            <a href="#" class="footer-font-size">Home </a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">About Us</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Services</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Contact</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Services</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <div class="widget footer-widget">
+                        <h3 class="widget-title mb-2 text-white">CATEGORY</h3>
+                        <ul class="footer-menu">
+                          <li>
+                            <a href="#" class="footer-font-size">Home </a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">About Us</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Services</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Contact</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Services</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer-font-size">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                      <div class="widget footer-widget">
+                        <h3 class="widget-title mb-2 text-white">
+                          CONTACT DETAILS
+                        </h3>
+
+                        <ul class="footer-menu">
+                          <li>
+                            <div class="d-flex">
+                              <img
+                                src="assets/img/clientsLogo/loc.png"
+                                class="mr-2"
+                                alt="location"
+                                style="height: 20px; margin-top: 10px"
+                              />
+                              <div>
+                                Calicut <br />
+                                Kerala , INDIA
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <span
+                              ><img
+                                src="assets/img/clientsLogo/email.png"
+                                class="mr-2"
+                                alt="email"
+                              />
+                              info@digitalindiaeportal.com</span
+                            >
+                          </li>
+                          <li>
+                            <span
+                              ><img
+                                src="assets/img/clientsLogo/phone.png"
+                                class="mr-2"
+                                alt="numbr"
+                              />
+                              9188 26 23 75</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- /.widget footer-widget -->
+                </div>
+                <!-- /.col-lg-3 col-md-6 -->
+
+                <!-- /.col-lg-3 col-md-6 -->
+              </div>
+              <!-- /.row -->
+              <hr class="hr-style" />
+              <div
+                class="d-flex justify-content-between pt-3 font-16 footerBottom"
+              >
+                <div class="copy-text text-nowrap">
+                  ©Digital India ePortal - All right reserved
+                </div>
+                <div class="copy-text text-nowrap">
+                  Privacy & Cookies Ts&Cs Accessibility
+                </div>
+                <div class="d-flex">
+                  <img
+                    class="px-2"
+                    src="assets/img/clientsLogo/card01.png"
+                    alt=""
+                  />
+                  <img
+                    class="px-2"
+                    src="assets/img/clientsLogo/card02.png"
+                    alt=""
+                  />
+                  <img
+                    class="px-2"
+                    src="assets/img/clientsLogo/card03.png"
+                    alt=""
+                  />
+                  <img
+                    class="px-2"
+                    src="assets/img/clientsLogo/card4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </footer>
+      </section>
+      <div class="seprator-div-dark"></div>
+
+      <!--=========================-->
+      <!--=        Footer         =-->
+      <!--=========================-->
+      <!-- /#footer -->
+    </div>
+    <!-- /#site -->
+
+    <!-- Dependency Scripts -->
+    <script src="dependencies/jquery/jquery.min.js"></script>
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dependencies/swiper/js/swiper.min.js"></script>
+    <script src="dependencies/wow/js/wow.min.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/lib/stats.js"></script>
+  </body>
 </html>

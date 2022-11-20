@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Blog</title>
+
+  <!-- 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/faviconIcon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/faviconIcon.png"
+    /> -->
+  <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#fa7070" />
+
+  <meta name="msapplication-TileColor" content="#fa7070" />
+  <meta name="theme-color" content="#fa7070" />
+
+  <!-- Dependency Styles -->
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css" />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="home-version-1" class="home-color-two" data-style="default">
+  <a href="#main_content" data-type="section-switch" class="return-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
+  <div class="page-loader">
+    <div class="loader">
+      <!-- Loader -->
+      <div class="blobs">
+        <div class="blob-center"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  <!-- /.page-loader -->
+
+  <div id="main_content">
+    <!--=========================-->
+    <!--=        Navbar         =-->
+    <!--=========================-->
+
+    <header class="site-header header-two header_trans-fixed" data-top="992">
+      <div class="container headerr">
+        <div class="header-inner">
+          <div class="site-mobile-logo">
+            <a href="index.html" class="logo">
+              <h4 class="text-white text-nowrap font-weight-bold mt-2">
+                Digital<span class="font-weight-light ml-2">India</span>
+              </h4>
+            </a>
+          </div>
+          <!-- /.site-mobile-logo -->
+
+          <div class="toggle-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- /.toggle-menu -->
+          <nav class="site-nav nav-two">
+            <div class="close-menu">
+              <span>Close</span>
+              <i class="ei ei-icon_close"></i>
+            </div>
+
+            <div class="site-logo">
+              <a href="index.html" class="logo">
+                <h5 class="text-white text-nowrap font-weight-bold mt-2">
+                  Digital<span class="font-weight-light ml-2">India</span>
+                </h5>
+              </a>
+            </div>
+
+            <!-- <div class="d-flex aligin-items-center justify-content-center"> -->
+            <div class="menu-wrapper" data-top="992">
+              <ul class="site-main-menu align-items-center">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Contact
+                    <img src="assets/img/clientsLogo/dropdown.png" alt="dropdown" width="10px" />
+                  </a>
+                  <ul class="sub-menu">
+                    <li><a href="#"> Mobile Recharge</a></li>
+                    <li><a href="#">TV Recharge</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                  </ul>
+                </li>
+                <li class="py-1">
+                  <a href="login.html" class="login-decoration nav-btn">Login</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" class="mr-4 login-decoration nav-btn">
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.menu-wrapper -->
+          </nav>
+          <!-- /.site-nav -->
+        </div>
+        <!-- /.header-inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.site-header -->
+
+    <!--========================-->
+    <!--=         Blog         =-->
+    <!--========================-->
+    <section class="blog-single">
+      <div class="container pb-120">
+        <div class="row">
+          <div class="col-md-8">
+            <!--===============================-->
+            <!--=         Our Blog          =-->
+            <!--===============================-->
+            <section class="testimonials-two blogg p-0">
+              <div class="container">
+                <div class="section-title color-two widget">
+                  <div class="widget-title">
+                    <h2 class="wow pixFadeUp text-dark fontW-500 headingBorder"
+                      style="font-size: 20px; padding-bottom: 12px" data-wow-delay="0.3s"
+                      style="animation-fill-mode: both">
+                      TECHNOLOGY
+                    </h2>
+                  </div>
+                  <div data-wow-delay="0.3s">
+                    <div id="slide-prev" class="swiper-button-prev">
+                      <!-- <i class="ei ei-arrow_left round-arrow"></i> -->
+                      <img src="assets/img/clientsLogo/leftArrow.png" class="round-arrow" alt="" />
+                    </div>
+                    <div id="slide-next" class="swiper-button-next">
+                      <!-- <i class="ei ei-arrow_right "></i> -->
+                      <img src="assets/img/clientsLogo/rightArrow.png" class="round-arrow" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- /.section-title -->
+
+                <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
+                  <div class="swiper-container pb-4" id="testimonial-two" data-speed="700" data-autoplay="5000"
+                    data-perpage="2" data-space="50"
+                    data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                    </div>
+                    <!-- /.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper-container -->
+                </div>
+                <!-- /#testimonial-wrapper -->
+              </div>
+              <!-- /.container -->
+            </section>
+            <!-- /.Our Blog -->
+
+            <section class="dashboard pt-0">
+              <div class="col-md-12 col-sm-12">
+                <div class="p-4">
+                  <div class="row justify-content-center mb-5">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="testimonials-two blogg p-0">
+              <div class="container">
+                <div class="section-title color-two widget">
+                  <div class="widget-title">
+                    <h2 class="wow pixFadeUp text-dark fontW-500 headingBorder"
+                      style="font-size: 20px; padding-bottom: 12px" data-wow-delay="0.3s"
+                      style="animation-fill-mode: both">
+                      TECHNOLOGY
+                    </h2>
+                  </div>
+                  <div data-wow-delay="0.3s">
+                    <div id="slide-prev" class="swiper-button-prev">
+                      <!-- <i class="ei ei-arrow_left round-arrow"></i> -->
+                      <img src="assets/img/clientsLogo/leftArrow.png" class="round-arrow" alt="" />
+                    </div>
+                    <div id="slide-next" class="swiper-button-next">
+                      <!-- <i class="ei ei-arrow_right "></i> -->
+                      <img src="assets/img/clientsLogo/rightArrow.png" class="round-arrow" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- /.section-title -->
+
+                <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
+                  <div class="swiper-container pb-4" id="testimonial-two" data-speed="700" data-autoplay="5000"
+                    data-perpage="2" data-space="50"
+                    data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                    </div>
+                    <!-- /.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper-container -->
+                </div>
+                <!-- /#testimonial-wrapper -->
+              </div>
+              <!-- /.container -->
+            </section>
+            <!-- /.Our Blog -->
+
+            <section class="dashboard pt-0">
+              <div class="col-md-12 col-sm-12">
+                <div class="p-4">
+                  <div class="row justify-content-center mb-5">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="testimonials-two blogg p-0">
+              <div class="container">
+                <div class="section-title color-two widget">
+                  <div class="widget-title">
+                    <h2 class="wow pixFadeUp text-dark fontW-500 headingBorder"
+                      style="font-size: 20px; padding-bottom: 12px" data-wow-delay="0.3s"
+                      style="animation-fill-mode: both">
+                      TECHNOLOGY
+                    </h2>
+                  </div>
+                  <div data-wow-delay="0.3s">
+                    <div id="slide-prev" class="swiper-button-prev">
+                      <!-- <i class="ei ei-arrow_left round-arrow"></i> -->
+                      <img src="assets/img/clientsLogo/leftArrow.png" class="round-arrow" alt="" />
+                    </div>
+                    <div id="slide-next" class="swiper-button-next">
+                      <!-- <i class="ei ei-arrow_right "></i> -->
+                      <img src="assets/img/clientsLogo/rightArrow.png" class="round-arrow" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- /.section-title -->
+
+                <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
+                  <div class="swiper-container pb-4" id="testimonial-two" data-speed="700" data-autoplay="5000"
+                    data-perpage="2" data-space="50"
+                    data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                    </div>
+                    <!-- /.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper-container -->
+                </div>
+                <!-- /#testimonial-wrapper -->
+              </div>
+              <!-- /.container -->
+            </section>
+            <!-- /.Our Blog -->
+
+            <section class="dashboard pt-0">
+              <div class="col-md-12 col-sm-12">
+                <div class="p-4">
+                  <div class="row justify-content-center mb-5">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-two">
+                        <div class="testi-content-inner bg-white">
+                          <div class="testimonial-bio">
+                            <img class="w-284 h-160" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                          </div>
+                          <!-- /.testimonial -->
+                          <div class="testimonial-content text-left pt-3 pb-4">
+                            <h5 class="text-left text-dark">
+                              Lorem Ipsum is simply dummy text of the printing
+                            </h5>
+                            <span>by <a href="">Johan</a> - 08/12/22</span>
+                          </div>
+                          <!-- /.testimonial-content -->
+                        </div>
+                        <!-- /.testi-content-inner -->
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /.col-md-8 -->
+
+          <div class="col-md-4">
+            <div class="sidebar2">
+              <div id="gp-posts-widget-2" class="widget gp-posts-widget">
+                <div class="gp-posts-widget-wrapper">
+                  <div class="d-flex justify-content-between">
+                    <h2 class="widget-title" style="font-size: 18px; border: none">
+                      LASTEST NEWS
+                    </h2>
+                    <span class="widget-title" style="
+                          font-size: 18px;
+                          border: none;
+                          color: #5f5f5f !important;
+                        ">MOST READ</span>
+                  </div>
+                  <div class="post-item">
+                    <div class="post-widget-thumbnail">
+                      <a href="#">
+                        <img src="assets/img/body/blogThumbnail.png" alt="thumb" />
+                      </a>
+                    </div>
+                    <div class="post-widget-info">
+                      <h5 class="post-widget-title">
+                        <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the printing
+                        </a>
+                      </h5>
+                      <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                      <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                    </div>
+                  </div>
+
+                  <div class="post-item">
+                    <div class="post-widget-thumbnail">
+                      <a href="#">
+                        <img src="assets/img/body/blogThumbnail.png" alt="thumb" />
+                      </a>
+                    </div>
+                    <div class="post-widget-info">
+                      <h5 class="post-widget-title">
+                        <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the printing
+                        </a>
+                      </h5>
+                      <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                      <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                    </div>
+                  </div>
+
+                  <div class="post-item">
+                    <div class="post-widget-thumbnail">
+                      <a href="#">
+                        <img src="assets/img/body/blogThumbnail.png" alt="thumb" />
+                      </a>
+                    </div>
+                    <div class="post-widget-info">
+                      <h5 class="post-widget-title">
+                        <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the printing
+                        </a>
+                      </h5>
+                      <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                      <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                    </div>
+                  </div>
+
+                  <div class="post-item">
+                    <div class="post-widget-thumbnail">
+                      <a href="#">
+                        <img src="assets/img/body/blogThumbnail.png" alt="thumb" />
+                      </a>
+                    </div>
+                    <div class="post-widget-info">
+                      <h5 class="post-widget-title">
+                        <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the printing
+                        </a>
+                      </h5>
+                      <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                      <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                    </div>
+                  </div>
+
+                  <div class="post-item">
+                    <div class="post-widget-thumbnail">
+                      <a href="#">
+                        <img src="assets/img/body/blogThumbnail.png" alt="thumb" />
+                      </a>
+                    </div>
+                    <div class="post-widget-info">
+                      <h5 class="post-widget-title">
+                        <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the printing
+                        </a>
+                      </h5>
+                      <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                      <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.sidebar -->
+          </div>
+          <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.blog-single -->
+
+    <!--=================================-->
+    <!--=         waves                 =-->
+    <!--=================================-->
+
+    <section class="footer-bg p-md-0 w-100">
+      <footer id="footer" class="footer-two p-lg-5 p-md-4">
+        <div class="container">
+          <div class="footer-inner wow pixFadeUp">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                  <a href="index.html" class="logo">
+                    <h5 class="text-white text-nowrap font-weight-bold pb-13">
+                      Digital<span class="font-weight-light ml-2">India</span>
+                    </h5>
+                  </a>
+                  <p class="font-16 text-white">
+                    Digital India ePortal - Discover <br />
+                    all govenment Services and Bill <br />
+                    Payment Services.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-5 pl-md-0 mtt-30">
+                <div class="row">
+                  <div class="col-lg-3 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">
+                        USEFUL LINKS
+                      </h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">CATEGORY</h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">
+                        CONTACT DETAILS
+                      </h3>
+
+                      <ul class="footer-menu">
+                        <li>
+                          <div class="d-flex">
+                            <img src="assets/img/clientsLogo/loc.png" class="mr-2" alt="location"
+                              style="height: 20px; margin-top: 10px" />
+                            <div>
+                              Calicut <br />
+                              Kerala , INDIA
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/email.png" class="mr-2" alt="email" />
+                            info@digitalindiaeportal.com</span>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/phone.png" class="mr-2" alt="numbr" />
+                            9188 26 23 75</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.widget footer-widget -->
+              </div>
+              <!-- /.col-lg-3 col-md-6 -->
+
+              <!-- /.col-lg-3 col-md-6 -->
+            </div>
+            <!-- /.row -->
+            <hr class="hr-style" />
+            <div class="d-flex justify-content-between pt-3 font-16 footerBottom">
+              <div class="copy-text text-nowrap">
+                ©Digital India ePortal - All right reserved
+              </div>
+              <div class="copy-text text-nowrap">
+                Privacy & Cookies Ts&Cs Accessibility
+              </div>
+              <div class="d-flex">
+                <img class="px-2" src="assets/img/clientsLogo/card01.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card02.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card03.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </footer>
+    </section>
+    <div class="seprator-div-dark"></div>
+
+    <!--=========================-->
+    <!--=        Footer         =-->
+    <!--=========================-->
+    <!-- /#footer -->
+  </div>
+  <!-- /#site -->
+
+  <!-- Dependency Scripts -->
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/swiper/js/swiper.min.js"></script>
+  <script src="dependencies/wow/js/wow.min.js"></script>
+
+  <!-- Site Scripts -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

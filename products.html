@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Products</title>
+  <!-- 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/faviconIcon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/faviconIcon.png"
+    /> -->
+  <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#fa7070" />
+
+  <meta name="msapplication-TileColor" content="#fa7070" />
+  <meta name="theme-color" content="#fa7070" />
+
+  <!-- Dependency Styles -->
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css" />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="home-version-1" class="home-color-two" data-style="default">
+  <a href="#main_content" data-type="section-switch" class="return-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
+  <div class="page-loader">
+    <div class="loader">
+      <!-- Loader -->
+      <div class="blobs">
+        <div class="blob-center"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  <!-- /.page-loader -->
+
+  <div id="main_content">
+    <!--=========================-->
+    <!--=        Navbar         =-->
+    <!--=========================-->
+
+    <header class="site-header header-two header_trans-fixed" data-top="992">
+      <div class="container headerr">
+        <div class="header-inner">
+          <div class="site-mobile-logo">
+            <a href="index.html" class="logo">
+              <h4 class="text-white text-nowrap font-weight-bold  mt-2">
+                Digital<span class="font-weight-light ml-2">India</span>
+              </h4>
+            </a>
+          </div>
+          <!-- /.site-mobile-logo -->
+
+          <div class="toggle-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- /.toggle-menu -->
+          <nav class="site-nav nav-two">
+            <div class="close-menu">
+              <span>Close</span>
+              <i class="ei ei-icon_close"></i>
+            </div>
+
+            <div class="site-logo">
+              <a href="index.html" class="logo">
+                <h5 class="text-white text-nowrap font-weight-bold mt-2">
+                  Digital<span class="font-weight-light ml-2">India</span>
+                </h5>
+              </a>
+            </div>
+
+            <!-- <div class="d-flex aligin-items-center justify-content-center"> -->
+            <div class="menu-wrapper" data-top="992">
+              <ul class="site-main-menu align-items-center">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Contact <img src="assets/img/clientsLogo/dropdown.png"
+                      alt="dropdown" width="10px" /> </a>
+                  <ul class="sub-menu">
+                    <li><a href="#"> Mobile Recharge</a></li>
+                    <li><a href="#">TV Recharge</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                  </ul>
+                </li>
+                <li class="py-1">
+                  <a href="login.html" class="login-decoration nav-btn">Login</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" class="mr-4 login-decoration nav-btn">
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.menu-wrapper -->
+          </nav>
+          <!-- /.site-nav -->
+        </div>
+        <!-- /.header-inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.site-header -->
+
+    <!--==========================-->
+    <!--=         Banner         =-->
+    <!--==========================-->
+
+    <section class="dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="filter">
+              <div class="d-flex mb-2">
+                <img class="p-relative" src="assets/img/clientsLogo/filterBg.png" alt="filter">
+                <img class="p-absolute z-99 p-2" src="assets/img/clientsLogo/clarity_filter-line.png" alt="filter" />
+                <h3 class="text-dark ml-2 mt-2">Filter</h3>
+              </div>
+              <span class="text-dark">x Clear all filters</span>
+              <ul class="itemType">
+                <h3 class="text-dark ml-2 mt-2">Item Type</h3>
+                <li><img src="assets/img/clientsLogo/tick.png" alt="tick" /> Equipment</li>
+                <li><img src="assets/img/clientsLogo/tick.png" alt="tick" /> Equipment</li>
+                <li><img src="assets/img/clientsLogo/tick.png" alt="tick" /> Equipment</li>
+                <li><img src="assets/img/clientsLogo/tick.png" alt="tick" /> Equipment</li>
+                <li><img src="assets/img/clientsLogo/tick.png" alt="tick" /> Equipment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9 ppr-5">
+            <section class="dashboard pt-0">
+              <div class="col-md-12 col-sm-12">
+                <div>
+                  <h1 class="text-center wow pixFadeUp font-46 mt-2" data-wow-delay="0.3s">
+                    <span class="font-weight-bold text-dark">Digital India</span>
+                  </h1>
+                  <p class="dashboardPara w-75 m0-auto">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                  <div class="row justify-content-center mb-2 mt-5">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+                  </div>
+                  <div class="row justify-content-center mb-2 mt-2">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+                  </div>
+
+                  <div class="row justify-content-center mb-5 mt-5">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft productCard"
+                        data-wow-delay="0.5s">
+                        <div class="saaspik-icon-box-icon">
+                          <img src="assets/img/body/Rectangle-2.png" alt="" />
+                        </div>
+                        <div class="pixsass-icon-box-content">
+                          <h2 class="pixsass-icon-box-title font-weight-bold mt-2">
+                            Title
+                          </h2>
+                          <p style="font-size: 15px;" class="mb-3 pb-1">
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                            we will visite India gate with our...
+                          </p>
+                          <div class="rating">
+                            <img src="assets/img/clientsLogo/emojione_star.png" alt="star" />
+                            <span class="text-dark">4.7</span><span>(8)</span>
+                          </div>
+                        </div>
+                        <hr class="mt-2">
+                        <div class="price d-flex justify-content-between">
+                          <div>
+                            <img src="assets/img/clientsLogo/subway_hurt.png" alt="star" style="height:20px" />
+                            <span>(8)</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="text-dark mr-2" style="font-size:12px">Starting at</span><span
+                              class="rating text-dark pt-1" style="font-size:19px">50$</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.pixsass-box style-four -->
+                    </div>
+                    <!-- /.col-lg-4 col-md-6 -->
+                  </div>
+                </div>
+              </div>
+
+            </section>
+            <ul class="post-navigation text-dark">
+              <li><a href="#">
+                  << /a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">></a></li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+
+    <!--=================================-->
+    <!--=         waves                 =-->
+    <!--=================================-->
+
+    <section class="footer-bg p-md-0 w-100">
+      <footer id="footer" class="footer-two p-lg-5 p-md-4">
+        <div class="container">
+          <div class="footer-inner wow pixFadeUp">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                  <a href="index.html" class="logo">
+                    <h5 class="text-white text-nowrap font-weight-bold pb-13">
+                      Digital<span class="font-weight-light ml-2">India</span>
+                    </h5>
+                  </a>
+                  <p class="font-16 text-white">
+                    Digital India ePortal - Discover <br> all govenment Services and Bill <br> Payment Services.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-5 pl-md-0 mtt-30">
+                <div class="row">
+                  <div class="col-lg-3 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">USEFUL LINKS</h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">CATEGORY</h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">CONTACT DETAILS</h3>
+
+                      <ul class="footer-menu">
+                        <li>
+                          <div class="d-flex"><img src="assets/img/clientsLogo/loc.png" class="mr-2" alt="location"
+                              style="height: 20px;
+                            margin-top: 10px;" />
+                            <div>Calicut <br> Kerala , INDIA </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/email.png" class="mr-2" alt="email" />
+                            info@digitalindiaeportal.com</span>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/phone.png" class="mr-2" alt="numbr" /> 9188 26 23
+                            75</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.widget footer-widget -->
+              </div>
+              <!-- /.col-lg-3 col-md-6 -->
+
+              <!-- /.col-lg-3 col-md-6 -->
+
+            </div>
+            <!-- /.row -->
+            <hr class="hr-style" />
+            <div class="d-flex justify-content-between pt-3 font-16 footerBottom">
+              <div class="copy-text text-nowrap">©Digital India ePortal - All right reserved</div>
+              <div class="copy-text text-nowrap">Privacy & Cookies Ts&Cs Accessibility</div>
+              <div class="d-flex">
+                <img class="px-2" src="assets/img/clientsLogo/card01.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card02.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card03.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </footer>
+    </section>
+    <div class="seprator-div-dark"></div>
+
+    <!--=========================-->
+    <!--=        Footer         =-->
+    <!--=========================-->
+    <!-- /#footer -->
+  </div>
+  <!-- /#site -->
+
+  <!-- Dependency Scripts -->
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/swiper/js/swiper.min.js"></script>
+  <script src="dependencies/wow/js/wow.min.js"></script>
+
+  <!-- Site Scripts -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

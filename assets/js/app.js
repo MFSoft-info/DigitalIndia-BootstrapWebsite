@@ -25,35 +25,52 @@ var PIXELSIGNS = PIXELSIGNS || {};
     /*========================================================*/
 
     general: function () {
-      $(".saaspik-dropdown li").on('click', function(e) {
+      $(".saaspik-dropdown li").on("click", function (e) {
         var $target = $(e.target);
         var $dropdown = $target.closest(".saaspik-dropdown");
         var $label = $dropdown.find("label");
         var $title = $label.find("span");
         var $toggle = $dropdown.find("input");
 
-        if ($dropdown.hasClass("init") || ($toggle.is(":checked") && !$target.hasClass("selected"))) {
-            $dropdown.removeClass("init");
-            $dropdown.find("li.selected").removeClass("selected");
-            $target.addClass("selected");
-            $dropdown.attr("data-val", ($target.attr("data-val") || $target.attr("data-val") == "") ? $target.attr("data-val") : $target.text().trim());
-            $title.text($target.attr("data-text") ? $target.attr("data-text") : $target.text().trim());
-            $label.css("width", ($title.width() + 20) + "px");
-            $toggle.prop("checked", false);
+        if (
+          $dropdown.hasClass("init") ||
+          ($toggle.is(":checked") && !$target.hasClass("selected"))
+        ) {
+          $dropdown.removeClass("init");
+          $dropdown.find("li.selected").removeClass("selected");
+          $target.addClass("selected");
+          $dropdown.attr(
+            "data-val",
+            $target.attr("data-val") || $target.attr("data-val") == ""
+              ? $target.attr("data-val")
+              : $target.text().trim()
+          );
+          $title.text(
+            $target.attr("data-text")
+              ? $target.attr("data-text")
+              : $target.text().trim()
+          );
+          $label.css("width", $title.width() + 20 + "px");
+          $toggle.prop("checked", false);
         }
-    });
-      $('.saaspik-select').on('click', '.placeholder', function() {
-        var parent = $(this).closest('.saaspik-select');
-        if (!parent.hasClass('is-open')) {
-            parent.addClass('is-open');
-            $('.saaspik-select.is-open').not(parent).removeClass('is-open');
-        } else {
-            parent.removeClass('is-open');
-        }
-    }).on('click', 'ul>li', function() {
-        var parent = $(this).closest('.saaspik-select');
-        parent.removeClass('is-open').find('.placeholder').text($(this).text());
-    });
+      });
+      $(".saaspik-select")
+        .on("click", ".placeholder", function () {
+          var parent = $(this).closest(".saaspik-select");
+          if (!parent.hasClass("is-open")) {
+            parent.addClass("is-open");
+            $(".saaspik-select.is-open").not(parent).removeClass("is-open");
+          } else {
+            parent.removeClass("is-open");
+          }
+        })
+        .on("click", "ul>li", function () {
+          var parent = $(this).closest(".saaspik-select");
+          parent
+            .removeClass("is-open")
+            .find(".placeholder")
+            .text($(this).text());
+        });
       //initialize with 1st option
       $(".lng-dropdown.init li:first-child").click();
 
@@ -110,7 +127,6 @@ var PIXELSIGNS = PIXELSIGNS || {};
           effect = $(this).data("effect"),
           direction = $(this).data("direction") || "horizontal",
           breakpoints = $(this).data("breakpoints");
-        console.log("perpageperpageperpage", perpage)
         var swiper = new Swiper($this, {
           slidesPerView: perpage,
           spaceBetween: space,
@@ -130,10 +146,10 @@ var PIXELSIGNS = PIXELSIGNS || {};
             el: ".swiper-pagination",
             clickable: true,
           },
-          // navigation: {
-          //   nextEl: ".swiper-button-next",
-          //   prevEl: ".swiper-button-prev",
-          // },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         });
       });
     },
@@ -193,43 +209,44 @@ var PIXELSIGNS = PIXELSIGNS || {};
     /*=           Mobile Menu          =*/
     /*==================================*/
 
-  
-    mobileMenu: function() {
-
+    mobileMenu: function () {
       var windowSize = $(window).width();
 
       if (windowSize < 991) {
-          $('.site-main-menu li.active').addClass('open').children('ul').show();
-          $('.site-main-menu li.menu-item-has-children>a').on('click', function() {
-              $(this).removeAttr('href');
-              var element = $(this).parent('li');
-              if (element.hasClass('open')) {
-                  element.removeClass('open');
-                  element.find('li').removeClass('open');
-                  element.find('ul').slideUp(400);
-              } else {
-                  element.addClass('open');
-                  element.children('ul').slideDown(400);
-                  element.siblings('li').children('ul').slideUp(400);
-                  element.siblings('li').removeClass('open');
-                  element.siblings('li').find('li').removeClass('open');
-                  element.siblings('li').find('ul').slideUp(400);
-              }
-          });
+        $(".site-main-menu li.active").addClass("open").children("ul").show();
+        $(".site-main-menu li.menu-item-has-children>a").on(
+          "click",
+          function () {
+            $(this).removeAttr("href");
+            var element = $(this).parent("li");
+            if (element.hasClass("open")) {
+              element.removeClass("open");
+              element.find("li").removeClass("open");
+              element.find("ul").slideUp(400);
+            } else {
+              element.addClass("open");
+              element.children("ul").slideDown(400);
+              element.siblings("li").children("ul").slideUp(400);
+              element.siblings("li").removeClass("open");
+              element.siblings("li").find("li").removeClass("open");
+              element.siblings("li").find("ul").slideUp(400);
+            }
+          }
+        );
       }
 
-      $('.toggle-menu').on('click', function(e) {
-          e.preventDefault();
-          var mask = '<div class="mask-overlay">';
+      $(".toggle-menu").on("click", function (e) {
+        e.preventDefault();
+        var mask = '<div class="mask-overlay">';
 
-          $('body').toggleClass('open-menu');
-          $(mask).hide().appendTo('body').fadeIn('fast');
-          $('.mask-overlay, .close-menu').on('click', function() {
-              $('body').removeClass('open-menu');
-              $('.mask-overlay').remove();
-          });
+        $("body").toggleClass("open-menu");
+        $(mask).hide().appendTo("body").fadeIn("fast");
+        $(".mask-overlay, .close-menu").on("click", function () {
+          $("body").removeClass("open-menu");
+          $(".mask-overlay").remove();
+        });
       });
-  },
+    },
 
     /*==========================================*/
     /*=           Section Background           =*/
@@ -378,7 +395,63 @@ var PIXELSIGNS = PIXELSIGNS || {};
       }
     },
 
+    /*=================================*/
+    /*=           Contact Form          =*/
+    /*=================================*/
 
+    contactFrom: function () {
+      $("[data-pixsaas]").each(function () {
+        var $this = $(this);
+        $(".form-result", $this).css("display", "none");
+
+        $this.submit(function () {
+          $('button[type="submit"]', $this).addClass("clicked");
+
+          // Create a object and assign all fields name and value.
+          var values = {};
+
+          $("[name]", $this).each(function () {
+            var $this = $(this),
+              $name = $this.attr("name"),
+              $value = $this.val();
+            values[$name] = $value;
+          });
+
+          // Make Request
+          $.ajax({
+            url: $this.attr("action"),
+            type: "POST",
+            data: values,
+            success: function success(data) {
+              if (data.error == true) {
+                $(".form-result", $this)
+                  .addClass("alert-warning")
+                  .removeClass("alert-success alert-danger")
+                  .css("display", "block");
+              } else {
+                $(".form-result", $this)
+                  .addClass("alert-success")
+                  .removeClass("alert-warning alert-danger")
+                  .css("display", "block");
+              }
+              $(".form-result > .content", $this).html(data.message);
+              $('button[type="submit"]', $this).removeClass("clicked");
+            },
+            error: function error() {
+              $(".form-result", $this)
+                .addClass("alert-danger")
+                .removeClass("alert-warning alert-success")
+                .css("display", "block");
+              $(".form-result > .content", $this).html(
+                "Sorry, an error occurred."
+              );
+              $('button[type="submit"]', $this).removeClass("clicked");
+            },
+          });
+          return false;
+        });
+      });
+    },
   };
 
   PIXELSIGNS.documentOnReady = {
@@ -416,4 +489,3 @@ var PIXELSIGNS = PIXELSIGNS || {};
   $(window).on("resize", PIXELSIGNS.documentOnResize.init);
   $(window).on("scroll", PIXELSIGNS.documentOnScroll.init);
 })(jQuery);
-
