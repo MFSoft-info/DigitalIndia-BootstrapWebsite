@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Data -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <title>Blog Detail</title>
 
-    <!-- 
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Blog Detail</title>
+
+  <!-- 
     <link
       rel="icon"
       type="image/png"
@@ -23,683 +21,641 @@
       sizes="16x16"
       href="assets/img/faviconIcon.png"
     /> -->
-    <link
-      rel="mask-icon"
-      href="assets/img/fav/safari-pinned-tab.svg"
-      color="#fa7070"
-    />
+  <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#fa7070" />
 
-    <meta name="msapplication-TileColor" content="#fa7070" />
-    <meta name="theme-color" content="#fa7070" />
+  <meta name="msapplication-TileColor" content="#fa7070" />
+  <meta name="theme-color" content="#fa7070" />
 
-    <!-- Dependency Styles -->
-    <link
-      rel="stylesheet"
-      href="dependencies/bootstrap/css/bootstrap.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="dependencies/fontawesome/css/all.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="dependencies/swiper/css/swiper.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="dependencies/wow/css/animate.css"
-      type="text/css"
-    />
+  <!-- Dependency Styles -->
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css" />
+  <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css" />
 
-    <!-- Site Stylesheet -->
-    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:300"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css" />
+</head>
 
-  <body id="home-version-1" class="home-color-two" data-style="default">
-    <a href="#main_content" data-type="section-switch" class="return-to-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
+<body id="home-version-1" class="home-color-two" data-style="default">
+  <a href="#main_content" data-type="section-switch" class="return-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
 
-    <div class="page-loader">
-      <div class="loader">
-        <!-- Loader -->
-        <div class="blobs">
-          <div class="blob-center"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="10"
-                result="blur"
-              />
-              <feColorMatrix
-                in="blur"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
+  <div class="page-loader">
+    <div class="loader">
+      <!-- Loader -->
+      <div class="blobs">
+        <div class="blob-center"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
     </div>
-    <!-- /.page-loader -->
+  </div>
+  <!-- /.page-loader -->
 
-    <div id="main_content">
-      <!--=========================-->
-      <!--=        Navbar         =-->
-      <!--=========================-->
+  <div id="main_content">
+    <!--=========================-->
+    <!--=        Navbar         =-->
+    <!--=========================-->
 
-      <header class="site-header header-two header_trans-fixed" data-top="992">
-        <div class="container headerr">
-          <div class="header-inner">
-            <div class="site-mobile-logo">
+    <header class="site-header header-two header_trans-fixed" data-top="992">
+      <div class="container headerr">
+        <div class="header-inner">
+          <div class="site-mobile-logo">
+            <a href="index.html" class="logo">
+              <h4 class="text-white text-nowrap font-weight-bold mt-2">
+                Digital<span class="font-weight-light ml-2">India</span>
+              </h4>
+            </a>
+          </div>
+          <!-- /.site-mobile-logo -->
+
+          <div class="toggle-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- /.toggle-menu -->
+          <nav class="site-nav nav-two">
+            <div class="close-menu">
+              <span>Close</span>
+              <i class="ei ei-icon_close"></i>
+            </div>
+
+            <div class="site-logo">
               <a href="index.html" class="logo">
-                <h4 class="text-white text-nowrap font-weight-bold mt-2">
+                <h5 class="text-white text-nowrap font-weight-bold mt-2">
                   Digital<span class="font-weight-light ml-2">India</span>
-                </h4>
+                </h5>
               </a>
             </div>
-            <!-- /.site-mobile-logo -->
 
-            <div class="toggle-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+            <!-- <div class="d-flex aligin-items-center justify-content-center"> -->
+            <div class="menu-wrapper" data-top="992">
+              <ul class="site-main-menu align-items-center">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Contact
+                    <img src="assets/img/clientsLogo/dropdown.png" alt="dropdown" width="10px" />
+                  </a>
+                  <ul class="sub-menu">
+                    <li><a href="#"> Mobile Recharge</a></li>
+                    <li><a href="#">TV Recharge</a></li>
+                    <li><a href="#">Bill Payment</a></li>
+                  </ul>
+                </li>
+                <li class="py-1">
+                  <a href="login.html" class="login-decoration nav-btn">Login</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" class="mr-4 login-decoration nav-btn">
+                    Register
+                  </a>
+                </li>
+              </ul>
             </div>
-            <!-- /.toggle-menu -->
-            <nav class="site-nav nav-two">
-              <div class="close-menu">
-                <span>Close</span>
-                <i class="ei ei-icon_close"></i>
-              </div>
-
-              <div class="site-logo">
-                <a href="index.html" class="logo">
-                  <h5 class="text-white text-nowrap font-weight-bold mt-2">
-                    Digital<span class="font-weight-light ml-2">India</span>
-                  </h5>
-                </a>
-              </div>
-
-              <!-- <div class="d-flex aligin-items-center justify-content-center"> -->
-              <div class="menu-wrapper" data-top="992">
-                <ul class="site-main-menu align-items-center">
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#"
-                      >Contact
-                      <img
-                        src="assets/img/clientsLogo/dropdown.png"
-                        alt="dropdown"
-                        width="10px"
-                      />
-                    </a>
-                    <ul class="sub-menu">
-                      <li><a href="#"> Mobile Recharge</a></li>
-                      <li><a href="#">TV Recharge</a></li>
-                      <li><a href="#">Bill Payment</a></li>
-                    </ul>
-                  </li>
-                  <li class="py-1">
-                    <a href="login.html" class="login-decoration nav-btn"
-                      >Login</a
-                    >
-                  </li>
-                  <li class="py-1">
-                    <a href="#" class="mr-4 login-decoration nav-btn">
-                      Register
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /.menu-wrapper -->
-            </nav>
-            <!-- /.site-nav -->
-          </div>
-          <!-- /.header-inner -->
+            <!-- /.menu-wrapper -->
+          </nav>
+          <!-- /.site-nav -->
         </div>
-        <!-- /.container -->
-      </header>
-      <!-- /.site-header -->
+        <!-- /.header-inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.site-header -->
 
-      <!--========================-->
-      <!--=         Blog         =-->
-      <!--========================-->
-      <section class="blog-single">
-        <div class="container pb-120">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="post-wrapper">
-                <article class="post post-signle">
-                  <div class="feature-image">
-                    <a href="#">
-                      <img src="assets/img/body/blogDetail.png" alt="" />
-                    </a>
-                  </div>
-                </article>
-                <!-- /.post -->
-              </div>
-              <!-- /.post-wrapper -->
-            </div>
-            <!-- /.col-md-8 -->
-
-            <div class="col-md-4">
-              <div class="sidebar2">
-                <div id="gp-posts-widget-2" class="widget gp-posts-widget2">
-                  <div class="gp-posts-widget-wrapper">
-                    <div class="d-flex justify-content-between">
-                      <h2
-                        class="widget-title"
-                        style="font-size: 18px; border: none"
-                      >
-                        LASTEST NEWS
-                      </h2>
-                      <span
-                        class="widget-title"
-                        style="
-                          font-size: 18px;
-                          border: none;
-                          color: #5f5f5f !important;
-                        "
-                        >MOST READ</span
-                      >
-                    </div>
-                    <div class="post-item">
-                      <div class="post-widget-thumbnail">
-                        <a href="#">
-                          <img
-                            src="assets/img/body/blogThumbnail.png"
-                            alt="thumb"
-                          />
-                        </a>
-                      </div>
-                      <div class="post-widget-info">
-                        <h5 class="post-widget-title">
-                          <a href="#" title="This Is Test Post"
-                            >Lorem Ipsum is simply dummy text of the printing
-                          </a>
-                        </h5>
-                        <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
-                        <span class="post-date"
-                          >by <a href="">Johan</a> - 08/12/22</span
-                        >
-                      </div>
-                    </div>
-
-                    <div class="post-item">
-                      <div class="post-widget-thumbnail">
-                        <a href="#">
-                          <img
-                            src="assets/img/body/blogThumbnail.png"
-                            alt="thumb"
-                          />
-                        </a>
-                      </div>
-                      <div class="post-widget-info">
-                        <h5 class="post-widget-title">
-                          <a href="#" title="This Is Test Post"
-                            >Lorem Ipsum is simply dummy text of the printing
-                          </a>
-                        </h5>
-                        <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
-                        <span class="post-date"
-                          >by <a href="">Johan</a> - 08/12/22</span
-                        >
-                      </div>
-                    </div>
-
-                    <div class="post-item">
-                      <div class="post-widget-thumbnail">
-                        <a href="#">
-                          <img
-                            src="assets/img/body/blogThumbnail.png"
-                            alt="thumb"
-                          />
-                        </a>
-                      </div>
-                      <div class="post-widget-info">
-                        <h5 class="post-widget-title">
-                          <a href="#" title="This Is Test Post"
-                            >Lorem Ipsum is simply dummy text of the printing
-                          </a>
-                        </h5>
-                        <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
-                        <span class="post-date"
-                          >by <a href="">Johan</a> - 08/12/22</span
-                        >
-                      </div>
-                    </div>
-                  </div>
+    <!--========================-->
+    <!--=         Blog         =-->
+    <!--========================-->
+    <section class="blog-single">
+      <div class="container pb-120">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="post-wrapper">
+              <article class="post post-signle">
+                <div class="feature-image">
+                  <a href="#">
+                    <img src="assets/img/body/blogDetail.png" alt="" />
+                  </a>
                 </div>
-              </div>
-              <!-- /.sidebar -->
+              </article>
+              <!-- /.post -->
             </div>
-            <!-- /.col-md-4 -->
+            <!-- /.post-wrapper -->
           </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-md-12">
-              <!--===============================-->
-              <!--=         Our Blog          =-->
-              <!--===============================-->
-              <section class="testimonials-two blogg p-0 pb-3">
-                <div>
-                  <div class="blog-content">
-                    <h1
-                      class="text-left wow pixFadeUp font-36 mt-3"
-                      data-wow-delay="0.3s"
-                    >
-                      <span class="fontW-600 text-dark"
-                        >There are many variations of passages of Lorem Ipsum
-                      </span>
-                    </h1>
-                    <span class="post-date"
-                      >by <a href="">Johan</a> - 08/12/22</span
-                    >
+          <!-- /.col-md-8 -->
 
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed dictum, neque ac vestibulum tincidunt, purus libero
-                      tristique tortor, euismod fermentum massa mi non nisi.
-                      Proin gravida dui non scelerisque dictum. Donec
-                      condimentum malesuada quam, non suscipit sem bibendum
-                      quis. Nam quam tellus, laoreet eget risus ut, dignissim
-                      consectetur ante. Pellentesque bibendum magna a ex
-                      ultrices imperdiet. In congue efficitur pharetra. Ut
-                      ornare ex nec urna condimentum faucibus.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed dictum, neque ac vestibulum tincidunt, purus libero
-                      tristique tortor, euismod fermentum massa mi non nisi.
-                      Proin gravida dui non scelerisque dictum. Donec
-                      condimentum malesuada quam, non suscipit sem bibendum
-                      quis. Nam quam tellus, laoreet eget risus ut, dignissim
-                      consectetur ante. Pellentesque bibendum magna a ex
-                      ultrices imperdiet. In congue efficitur pharetra. Ut
-                      ornare ex nec urna condimentum faucibus.
-                    </p>
+          <div class="col-md-4">
+            <div class="sidebar2">
+              <div id="gp-posts-widget-2" class="widget gp-posts-widget2">
+                <div class="gp-posts-widget-wrapper">
+                  <div id="pix-tabs" class="d-flex justify-content-between">
+                    <div id="pix-tabs-nav" class="d-flex justify-content-between mb-0">
+                      <li style="display: block" class="category">
+                        <a href="#tab1" style="
+                              background-color: transparent !important;
+                              border: none !important;
+                              padding: 0px !important;
+                              margin-bottom: 0px !important;
+                            ">
+                          <h2 class="widget-title" style="font-size: 18px; border: none">
+                            LASTEST NEWS
+                          </h2>
+                        </a>
+                      </li>
+                      <li style="display: block" class="category">
+                        <a href="#tab2" style="
+                              background-color: transparent !important;
+                              border: none !important;
+                              padding: 0px !important;
+                              margin-bottom: 0px !important;
+                            "><span class="widget-title" style="font-size: 18px; border: none">MOST READ</span></a>
+                      </li>
+                    </div>
                   </div>
-                  <!-- /.post-content -->
+                  <div id="pix-tabs-content">
+                    <div id="tab1" class="content">
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div id="tab2" class="content">
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+                      <div class="post-item">
+                        <div class="post-widget-thumbnail">
+                          <a href="#">
+                            <img src="assets/img/body/blogThumbnail.png" alt="thumb" class="m-0" />
+                          </a>
+                        </div>
+                        <div class="post-widget-info">
+                          <h5 class="post-widget-title">
+                            <a href="#" title="This Is Test Post">Lorem Ipsum is simply dummy text of the
+                              printing
+                            </a>
+                          </h5>
+                          <!-- <span class="post-date">May 16, 2019, Saturday</span> -->
+                          <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- /.container -->
-              </section>
-              <!-- /.Our Blog -->
+              </div>
             </div>
+            <!-- /.sidebar -->
           </div>
-          <div class="row">
-            <div class="col-md-8">
-              <!--===============================-->
-              <!--=         Our Blog          =-->
-              <!--===============================-->
-              <section class="testimonials-two blogg p-0 pt-3">
-                <div class="">
-                  <div class="section-title color-two widget">
-                    <div class="widget-title">
-                      <h2
-                        class="wow pixFadeUp text-dark fontW-500 headingBorder"
-                        style="font-size: 20px; padding-bottom: 12px"
-                        data-wow-delay="0.3s"
-                        style="animation-fill-mode: both"
-                      >
-                        RELATED NEWS
-                      </h2>
-                    </div>
-                    <div data-wow-delay="0.3s">
-                      <div id="slide-prev" class="swiper-button-prev">
-                        <!-- <i class="ei ei-arrow_left round-arrow"></i> -->
-                        <img
-                          src="assets/img/clientsLogo/leftArrow.png"
-                          class="round-arrow"
-                          alt=""
-                        />
-                      </div>
-                      <div id="slide-next" class="swiper-button-next">
-                        <!-- <i class="ei ei-arrow_right "></i> -->
-                        <img
-                          src="assets/img/clientsLogo/rightArrow.png"
-                          class="round-arrow"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.section-title -->
+          <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-md-12">
+            <!--===============================-->
+            <!--=         Our Blog          =-->
+            <!--===============================-->
+            <section class="testimonials-two blogg p-0 pb-3">
+              <div>
+                <div class="blog-content">
+                  <h1 class="text-left wow pixFadeUp font-36 mt-3" data-wow-delay="0.3s">
+                    <span class="fontW-600 text-dark">There are many variations of passages of Lorem Ipsum
+                    </span>
+                  </h1>
+                  <span class="post-date">by <a href="">Johan</a> - 08/12/22</span>
 
-                  <div
-                    id="testimonial-wrapper"
-                    class="wow pixFadeUp"
-                    data-wow-delay="0.4s"
-                  >
-                    <div
-                      class="swiper-container pb-4"
-                      id="testimonial-two"
-                      data-speed="700"
-                      data-autoplay="5000"
-                      data-perpage="2"
-                      data-space="50"
-                      data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'
-                    >
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="testimonial-two">
-                            <div class="testi-content-inner bg-white">
-                              <div class="testimonial-bio">
-                                <img
-                                  class="w-442 h-246"
-                                  src="assets/img/body/Rectangle-4.png"
-                                  alt="testimonial"
-                                />
-                              </div>
-                              <!-- /.testimonial -->
-                              <div
-                                class="testimonial-content text-left pt-3 pb-4"
-                              >
-                                <h5 class="text-left text-dark">
-                                  Lorem Ipsum is simply dummy text of the
-                                  printing
-                                </h5>
-                                <span>by <a href="">Johan</a> - 08/12/22</span>
-                                <button class="btn blogReadMore d-flex">
-                                  Read more
-                                </button>
-                              </div>
-                              <!-- /.testimonial-content -->
-                            </div>
-                            <!-- /.testi-content-inner -->
-                          </div>
-                          <!-- /.testimonial-two -->
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-two">
-                            <div class="testi-content-inner bg-white">
-                              <div class="testimonial-bio">
-                                <img
-                                  class="w-442 h-246"
-                                  src="assets/img/body/Rectangle-4.png"
-                                  alt="testimonial"
-                                />
-                              </div>
-                              <!-- /.testimonial -->
-                              <div
-                                class="testimonial-content text-left pt-3 pb-4"
-                              >
-                                <h5 class="text-left text-dark">
-                                  Lorem Ipsum is simply dummy text of the
-                                  printing
-                                </h5>
-                                <span>by <a href="">Johan</a> - 08/12/22</span>
-                                <button class="btn blogReadMore d-flex">
-                                  Read more
-                                </button>
-                              </div>
-                              <!-- /.testimonial-content -->
-                            </div>
-                            <!-- /.testi-content-inner -->
-                          </div>
-                          <!-- /.testimonial-two -->
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-two">
-                            <div class="testi-content-inner bg-white">
-                              <div class="testimonial-bio">
-                                <img
-                                  class="w-442 h-246"
-                                  src="assets/img/body/Rectangle-4.png"
-                                  alt="testimonial"
-                                />
-                              </div>
-                              <!-- /.testimonial -->
-                              <div
-                                class="testimonial-content text-left pt-3 pb-4"
-                              >
-                                <h5 class="text-left text-dark">
-                                  Lorem Ipsum is simply dummy text of the
-                                  printing
-                                </h5>
-                                <span>by <a href="">Johan</a> - 08/12/22</span>
-                                <button class="btn blogReadMore d-flex">
-                                  Read more
-                                </button>
-                              </div>
-                              <!-- /.testimonial-content -->
-                            </div>
-                            <!-- /.testi-content-inner -->
-                          </div>
-                          <!-- /.testimonial-two -->
-                        </div>
-                      </div>
-                      <!-- /.swiper-wrapper -->
-                    </div>
-                    <!-- /.swiper-container -->
-                  </div>
-                  <!-- /#testimonial-wrapper -->
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dictum, neque ac vestibulum tincidunt, purus libero
+                    tristique tortor, euismod fermentum massa mi non nisi.
+                    Proin gravida dui non scelerisque dictum. Donec
+                    condimentum malesuada quam, non suscipit sem bibendum
+                    quis. Nam quam tellus, laoreet eget risus ut, dignissim
+                    consectetur ante. Pellentesque bibendum magna a ex
+                    ultrices imperdiet. In congue efficitur pharetra. Ut
+                    ornare ex nec urna condimentum faucibus.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed dictum, neque ac vestibulum tincidunt, purus libero
+                    tristique tortor, euismod fermentum massa mi non nisi.
+                    Proin gravida dui non scelerisque dictum. Donec
+                    condimentum malesuada quam, non suscipit sem bibendum
+                    quis. Nam quam tellus, laoreet eget risus ut, dignissim
+                    consectetur ante. Pellentesque bibendum magna a ex
+                    ultrices imperdiet. In congue efficitur pharetra. Ut
+                    ornare ex nec urna condimentum faucibus.
+                  </p>
                 </div>
-                <!-- /.container -->
-              </section>
-              <!-- /.Our Blog -->
-            </div>
+                <!-- /.post-content -->
+              </div>
+              <!-- /.container -->
+            </section>
+            <!-- /.Our Blog -->
           </div>
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.blog-single -->
-
-      <!--=================================-->
-      <!--=         waves                 =-->
-      <!--=================================-->
-
-      <section class="footer-bg p-md-0 w-100">
-        <footer id="footer" class="footer-two p-lg-5 p-md-4">
-          <div class="container">
-            <div class="footer-inner wow pixFadeUp">
-              <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="footer-widget">
-                    <a href="index.html" class="logo">
-                      <h5 class="text-white text-nowrap font-weight-bold pb-13">
-                        Digital<span class="font-weight-light ml-2">India</span>
-                      </h5>
-                    </a>
-                    <p class="font-16 text-white">
-                      Digital India ePortal - Discover <br />
-                      all govenment Services and Bill <br />
-                      Payment Services.
-                    </p>
+        <div class="row">
+          <div class="col-md-8">
+            <!--===============================-->
+            <!--=         Our Blog          =-->
+            <!--===============================-->
+            <section class="testimonials-two blogg p-0 pt-3">
+              <div class="">
+                <div class="section-title color-two widget">
+                  <div class="widget-title">
+                    <h2 class="wow pixFadeUp text-dark fontW-500 headingBorder"
+                      style="font-size: 20px; padding-bottom: 12px" data-wow-delay="0.3s"
+                      style="animation-fill-mode: both">
+                      RELATED NEWS
+                    </h2>
+                  </div>
+                  <div data-wow-delay="0.3s">
+                    <div id="slide-prev" class="swiper-button-prev">
+                      <!-- <i class="ei ei-arrow_left round-arrow"></i> -->
+                      <img src="assets/img/clientsLogo/leftArrow.png" class="round-arrow" alt="" />
+                    </div>
+                    <div id="slide-next" class="swiper-button-next">
+                      <!-- <i class="ei ei-arrow_right "></i> -->
+                      <img src="assets/img/clientsLogo/rightArrow.png" class="round-arrow" alt="" />
+                    </div>
                   </div>
                 </div>
+                <!-- /.section-title -->
 
-                <div
-                  class="col-lg-8 col-md-12 col-sm-12 pl-lg-5 pl-md-0 mtt-30"
-                >
-                  <div class="row">
-                    <div class="col-lg-3 col-md-12">
-                      <div class="widget footer-widget">
-                        <h3 class="widget-title mb-2 text-white">
-                          USEFUL LINKS
-                        </h3>
-                        <ul class="footer-menu">
-                          <li>
-                            <a href="#" class="footer-font-size">Home </a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">About Us</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Services</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Contact</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Services</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Contact</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                      <div class="widget footer-widget">
-                        <h3 class="widget-title mb-2 text-white">CATEGORY</h3>
-                        <ul class="footer-menu">
-                          <li>
-                            <a href="#" class="footer-font-size">Home </a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">About Us</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Services</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Contact</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Services</a>
-                          </li>
-                          <li>
-                            <a href="#" class="footer-font-size">Contact</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12">
-                      <div class="widget footer-widget">
-                        <h3 class="widget-title mb-2 text-white">
-                          CONTACT DETAILS
-                        </h3>
-
-                        <ul class="footer-menu">
-                          <li>
-                            <div class="d-flex">
-                              <img
-                                src="assets/img/clientsLogo/loc.png"
-                                class="mr-2"
-                                alt="location"
-                                style="height: 20px; margin-top: 10px"
-                              />
-                              <div>
-                                Calicut <br />
-                                Kerala , INDIA
-                              </div>
+                <div id="testimonial-wrapper" class="wow pixFadeUp" data-wow-delay="0.4s">
+                  <div class="swiper-container pb-4" id="testimonial-two" data-speed="700" data-autoplay="5000"
+                    data-perpage="2" data-space="50"
+                    data-breakpoints='{"991": {"slidesPerView": 2}, "768": {"slidesPerView": 1}}'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
                             </div>
-                          </li>
-                          <li>
-                            <span
-                              ><img
-                                src="assets/img/clientsLogo/email.png"
-                                class="mr-2"
-                                alt="email"
-                              />
-                              info@digitalindiaeportal.com</span
-                            >
-                          </li>
-                          <li>
-                            <span
-                              ><img
-                                src="assets/img/clientsLogo/phone.png"
-                                class="mr-2"
-                                alt="numbr"
-                              />
-                              9188 26 23 75</span
-                            >
-                          </li>
-                        </ul>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-two">
+                          <div class="testi-content-inner bg-white">
+                            <div class="testimonial-bio">
+                              <img class="w-442 h-246" src="assets/img/body/Rectangle-4.png" alt="testimonial" />
+                            </div>
+                            <!-- /.testimonial -->
+                            <div class="testimonial-content text-left pt-3 pb-4">
+                              <h5 class="text-left text-dark">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                              </h5>
+                              <span>by <a href="">Johan</a> - 08/12/22</span>
+                              <button class="btn blogReadMore d-flex">
+                                Read more
+                              </button>
+                            </div>
+                            <!-- /.testimonial-content -->
+                          </div>
+                          <!-- /.testi-content-inner -->
+                        </div>
+                        <!-- /.testimonial-two -->
                       </div>
                     </div>
+                    <!-- /.swiper-wrapper -->
                   </div>
-
-                  <!-- /.widget footer-widget -->
+                  <!-- /.swiper-container -->
                 </div>
-                <!-- /.col-lg-3 col-md-6 -->
-
-                <!-- /.col-lg-3 col-md-6 -->
+                <!-- /#testimonial-wrapper -->
               </div>
-              <!-- /.row -->
-              <hr class="hr-style" />
-              <div
-                class="d-flex justify-content-between pt-3 font-16 footerBottom"
-              >
-                <div class="copy-text text-nowrap">
-                  ©Digital India ePortal - All right reserved
+              <!-- /.container -->
+            </section>
+            <!-- /.Our Blog -->
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.blog-single -->
+
+    <!--=================================-->
+    <!--=         waves                 =-->
+    <!--=================================-->
+
+    <section class="footer-bg p-md-0 w-100">
+      <footer id="footer" class="footer-two p-lg-5 p-md-4">
+        <div class="container">
+          <div class="footer-inner wow pixFadeUp">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                  <a href="index.html" class="logo">
+                    <h5 class="text-white text-nowrap font-weight-bold pb-13">
+                      Digital<span class="font-weight-light ml-2">India</span>
+                    </h5>
+                  </a>
+                  <p class="font-16 text-white">
+                    Digital India ePortal - Discover <br />
+                    all govenment Services and Bill <br />
+                    Payment Services.
+                  </p>
                 </div>
-                <div class="copy-text text-nowrap">
-                  Privacy & Cookies Ts&Cs Accessibility
+              </div>
+
+              <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-5 pl-md-0 mtt-30">
+                <div class="row">
+                  <div class="col-lg-3 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">
+                        USEFUL LINKS
+                      </h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">CATEGORY</h3>
+                      <ul class="footer-menu">
+                        <li>
+                          <a href="#" class="footer-font-size">Home </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Services</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-font-size">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-12">
+                    <div class="widget footer-widget">
+                      <h3 class="widget-title mb-2 text-white">
+                        CONTACT DETAILS
+                      </h3>
+
+                      <ul class="footer-menu">
+                        <li>
+                          <div class="d-flex">
+                            <img src="assets/img/clientsLogo/loc.png" class="mr-2" alt="location"
+                              style="height: 20px; margin-top: 10px" />
+                            <div>
+                              Calicut <br />
+                              Kerala , INDIA
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/email.png" class="mr-2" alt="email" />
+                            info@digitalindiaeportal.com</span>
+                        </li>
+                        <li>
+                          <span><img src="assets/img/clientsLogo/phone.png" class="mr-2" alt="numbr" />
+                            9188 26 23 75</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="d-flex">
-                  <img
-                    class="px-2"
-                    src="assets/img/clientsLogo/card01.png"
-                    alt=""
-                  />
-                  <img
-                    class="px-2"
-                    src="assets/img/clientsLogo/card02.png"
-                    alt=""
-                  />
-                  <img
-                    class="px-2"
-                    src="assets/img/clientsLogo/card03.png"
-                    alt=""
-                  />
-                  <img
-                    class="px-2"
-                    src="assets/img/clientsLogo/card4.png"
-                    alt=""
-                  />
-                </div>
+
+                <!-- /.widget footer-widget -->
+              </div>
+              <!-- /.col-lg-3 col-md-6 -->
+
+              <!-- /.col-lg-3 col-md-6 -->
+            </div>
+            <!-- /.row -->
+            <hr class="hr-style" />
+            <div class="d-flex justify-content-between pt-3 font-16 footerBottom">
+              <div class="copy-text text-nowrap">
+                ©Digital India ePortal - All right reserved
+              </div>
+              <div class="copy-text text-nowrap">
+                Privacy & Cookies Ts&Cs Accessibility
+              </div>
+              <div class="d-flex">
+                <img class="px-2" src="assets/img/clientsLogo/card01.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card02.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card03.png" alt="" />
+                <img class="px-2" src="assets/img/clientsLogo/card4.png" alt="" />
               </div>
             </div>
           </div>
-          <!-- /.container -->
-        </footer>
-      </section>
-      <div class="seprator-div-dark"></div>
+        </div>
+        <!-- /.container -->
+      </footer>
+    </section>
+    <div class="seprator-div-dark"></div>
 
-      <!--=========================-->
-      <!--=        Footer         =-->
-      <!--=========================-->
-      <!-- /#footer -->
-    </div>
-    <!-- /#site -->
+    <!--=========================-->
+    <!--=        Footer         =-->
+    <!--=========================-->
+    <!-- /#footer -->
+  </div>
+  <!-- /#site -->
 
-    <!-- Dependency Scripts -->
-    <script src="dependencies/jquery/jquery.min.js"></script>
-    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-    <script src="dependencies/swiper/js/swiper.min.js"></script>
-    <script src="dependencies/wow/js/wow.min.js"></script>
+  <!-- Dependency Scripts -->
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/swiper/js/swiper.min.js"></script>
+  <script src="dependencies/wow/js/wow.min.js"></script>
 
-    <!-- Site Scripts -->
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/app.js"></script>
-  </body>
+  <!-- Site Scripts -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>

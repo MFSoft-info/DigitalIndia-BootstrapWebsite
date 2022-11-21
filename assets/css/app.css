@@ -1597,10 +1597,10 @@ section {
   margin: 0 auto;
 }
 .testimonialHeader {
-  height: 670px !important;
+  height: 680px !important;
 }
 .testimonialHeader .swiper-container {
-  padding: 100px 20px 0px !important;
+  padding: 80px 20px 0px !important;
 }
 .browseBusiness {
   padding: 90px 0 140px !important;
@@ -1905,22 +1905,32 @@ section {
 }
 .testimonialHeader .formPadding {
   padding: 20px 60px;
+  background-color: #fff;
+  width: 50%;
+  border-radius: 20px;
+  float: right;
 }
 .testimonialHeader input {
   padding: 7px 20px;
   border: 1px solid #000000;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.testimonialHeader textarea {
+  padding: 7px 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .testimonialHeader .submit-btn {
   background: #6100ff;
   border-radius: 17px;
   color: #ffffff;
-  padding: 6px 40px;
+  padding: 8px 40px;
   font-size: 20px;
   border: none;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -2003,6 +2013,49 @@ section {
 #pix-tabs-content img {
   margin: 20px 0px;
 }
+.w3-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.w3-modal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px;
+}
+.w3-teal, .w3-hover-teal:hover {
+  color: #fff!important;
+  background-color: #6100ff!important;
+}
+
+.w3-container, .w3-panel {
+  padding: 10px !important;
+}
+
+.w3-display-topright {
+  position: absolute;
+  right:10px;
+  top: 9px;
+  font-size: 30px;
+}
+.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.w3-container, .w3-panel {
+  padding: 0.01em 16px;
+}
 .filter {
   background: #ffffff;
   box-shadow: 10px 18px 0px rgba(0, 0, 0, 0.25), 0px 4px 21px rgba(0, 0, 0, 0.3);
@@ -2020,8 +2073,8 @@ section {
   font-size: 19px;
   line-height: 24px;
   color: #000000;
-  margin-left: 10px;
-  margin-top: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 .productCard {
   background: #ffffff;
@@ -2045,6 +2098,7 @@ section {
   width: 50%;
   margin-bottom: 60px !important;
   padding-bottom: 15px;
+  padding-top: 0px;
   margin: 0 auto;
   list-style: none;
   text-align: center;
@@ -2076,6 +2130,12 @@ section {
 }
 .post-navigation li a {
   color: #000000 !important;
+}
+.post-navigation li a.active {
+  background-color: #6100ff;
+  color: #ffffff !important;
+  padding: 3px 9px;
+  border-radius: 50%;
 }
 .blog-single {
   padding-top: 140px;
@@ -2309,6 +2369,17 @@ select {
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 22px;
+}
+#pix-tabs-nav .category a .widget-title {
+  color: #5f5f5f !important;
+}
+#pix-tabs-nav .category.active a .widget-title {
+  color: #000000 !important;
+}
+.checkboxx {
+  width: 10%;
+  margin-right: 8px;
+  margin-top: 4px;
 }
 @media (max-width: 475px) {
   .gp-posts-widget2 {

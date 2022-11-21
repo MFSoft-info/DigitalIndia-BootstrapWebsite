@@ -85,9 +85,9 @@ var PIXELSIGNS = PIXELSIGNS || {};
       wow.init();
 
       // Show first content by default
-      $("#pix-tabs-nav li:nth-child(2)").addClass("active");
+      $("#pix-tabs-nav li:nth-child(1)").addClass("active");
       $("#pix-tabs-content .content").hide();
-      $("#pix-tabs-content .content:nth-child(2)").show();
+      $("#pix-tabs-content .content:nth-child(1)").show();
 
       // click function
       $("#pix-tabs-nav li").on("click", function () {
